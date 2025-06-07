@@ -2,4 +2,12 @@
 layout: default
 ---
 
-{{ content }}
+{% if post.title != null %}
+{% if group == null or group == post.group %}
+{% include postbox.html %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% assign pages_list = nil %}
+{% assign group = nil %}
+{% endfor %}
