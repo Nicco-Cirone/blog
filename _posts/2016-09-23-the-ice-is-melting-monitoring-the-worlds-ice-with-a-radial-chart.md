@@ -2,6 +2,7 @@
 title: "The ice is melting. Monitoring the world's ice with a radial chart."
 date: 2016-09-23 16:49:03
 layout: post
+categories: garbanzo
 ---
 
 For this third and last [Tableau #IronViz qualification round](http://tabsoft.co/2cWPTL6) (follow the link and find my dataviz, if you want to vote for me!), I decided to build something using [this cool dataset](ftp://sidads.colorado.edu/DATASETS/NOAA/G02186/masie_4km_allyears_extent_sqkm.csv): a publicly available csv with ice extent in the northern hemisphere by region, updated daily.
