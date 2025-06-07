@@ -20,7 +20,7 @@ Given three tangent circles, Apollonius discovered how to find other two circles
 
  
 
-![800px-Apollonian_gasket.svg.png](/assets/uploads/800px-apollonian_gasket-svg.png)
+![800px-Apollonian_gasket.svg.png]({{ site.baseurl }}/assets/uploads/800px-apollonian_gasket-svg.webp)
 
 that belongs in the field of maths and algebra, and has been borrowed by dataviz to encode quantities as circles' area.
 

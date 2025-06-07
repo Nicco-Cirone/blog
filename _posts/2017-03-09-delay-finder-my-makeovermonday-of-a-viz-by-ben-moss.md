@@ -16,11 +16,11 @@ Some week ago, my good friend, colleague and great data wrangler Ben Moss publis
 
 As an Italian expat in London, I can easily qualify as an interested audience, and I definitely had questions to ask the dashboard.
 
-![Capture](/assets/uploads/capture.png)
+![Capture]({{ site.baseurl }}/assets/uploads/capture.webp)
 
 Here's Ben'dashboard:
 
-[caption id="attachment\_2137" align="alignnone" width="879"][![dashie](/assets/uploads/dashie.png)](https://public.tableau.com/profile/ben.moss3243#!/vizhome/DelayFinder/DelayFinder) [Click to go to the interactive dashboard](https://public.tableau.com/profile/ben.moss3243#!/vizhome/DelayFinder/DelayFinder)[/caption]
+[caption id="attachment\_2137" align="alignnone" width="879"][![dashie]({{ site.baseurl }}/assets/uploads/dashie.webp)](https://public.tableau.com/profile/ben.moss3243#!/vizhome/DelayFinder/DelayFinder) [Click to go to the interactive dashboard](https://public.tableau.com/profile/ben.moss3243#!/vizhome/DelayFinder/DelayFinder)[/caption]
 
 This peculiar cocktail of interest, good data, and friendship made me willing to apply to Ben's dashboard the rules of both the MakeoverMonday project and the framework outlined by Stephen Few.
 
@@ -36,12 +36,12 @@ First, I downloaded Ben's workbook from Tableau Public. I constrained myself to 
 
 Then I evaluated the dashboard effectiveness based on Stephen Few's framework:
 
-![Ben MM](/assets/uploads/ben-mm.png)
+![Ben MM]({{ site.baseurl }}/assets/uploads/ben-mm.webp)
 
 The dashboard is useful, but the easiness-to-use can be improved offering a faster way to select airports based on location and to compare actual carriers/airports combination. The completeness could be improved adding more months to the underlying data, while the perceptibility is affected by the stacked bar. It is definitely truthful, as the average delays have been disaggregated by Ben in order to be then aggregated in Tableau at different levels of detail. The design is really intuitive, and the great arcs really help to visualize the routes, as well as enhancing the overall aesthetics and engagement of the visualization.
 
 Here below is my version of the dashboard. Click on the picture to go to the interactive tableau public viz.
 
-[caption id="attachment\_2132" align="alignnone" width="984"][![Delay Finder Makeover](/assets/uploads/delay-finder-makeover.png)](https://public.tableau.com/views/DelayFinder-AMakeOverofadashboardbyBenMoss/DelayFinderMakeover?:embed=y&:display_count=yes) [Click to go to the interactive dashboard](https://public.tableau.com/views/DelayFinder-AMakeOverofadashboardbyBenMoss/DelayFinderMakeover?:embed=y&:display_count=yes)[/caption]
+[caption id="attachment\_2132" align="alignnone" width="984"][![Delay Finder Makeover]({{ site.baseurl }}/assets/uploads/delay-finder-makeover.webp)](https://public.tableau.com/views/DelayFinder-AMakeOverofadashboardbyBenMoss/DelayFinderMakeover?:embed=y&:display_count=yes) [Click to go to the interactive dashboard](https://public.tableau.com/views/DelayFinder-AMakeOverofadashboardbyBenMoss/DelayFinderMakeover?:embed=y&:display_count=yes)[/caption]
 
 I am really grateful to Ben for letting me experiment #DataViz critics on its work, and I hope he will eventually pay back criticizing one of my visualizations.

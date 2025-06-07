@@ -15,7 +15,7 @@ As we strive for a more transparent, informed and data-driven society, I genuine
 
 In fact, because they don't aim to change opinions, they empower people with visual instruments to check what's going on themselves. Thanks to Data Explorers, people can make sense out of data when they are complex and - yes - big.
 
-![Toy Explorer-256x256.png](/assets/uploads/toy-explorer-256x256.png)
+![Toy Explorer-256x256.png]({{ site.baseurl }}/assets/uploads/toy-explorer-256x256.webp)
 
 **#1 Open data and the open source paradigm**
 
@@ -25,7 +25,7 @@ But is this enough to make us a transparent and informed society?
 
 During his talk at the #Data16 conference in Austin, my colleague and coach Chris Love synthesized with this slide the different levels of guidance through which analytics can be deployed to users:
 
-![Datasource-Dashboards-Storypoints.PNG](/assets/uploads/datasource-dashboards-storypoints.png)
+![Datasource-Dashboards-Storypoints.PNG]({{ site.baseurl }}/assets/uploads/datasource-dashboards-storypoints.webp)
 
 Making data sources available to un-guided analysis is the foundational step of the whole thing. They offer none or few guidance to the user, unleashing a virtually infinite set of interpretations. The main challenge here is maintaining data always up to date, properly documented, and at the highest level of granularity.
 
@@ -39,7 +39,7 @@ His point of view is the one of a storyteller. I do agree with Martin, storytell
 
 However, as much as we need good portals to get data and great data journalists to tell stories, we need Data Explorers to truly unleash the real power of data to society.
 
-![tweet](/assets/uploads/tweet.png)![replies](/assets/uploads/replies.png)
+![tweet]({{ site.baseurl }}/assets/uploads/tweet.webp)![replies]({{ site.baseurl }}/assets/uploads/replies.webp)
 **#2 The role of Data Explorers**
 
 Nowadays Business Intelligence is living a pardigm shift, from IT based reporting systems to Self Service analytics. Business analysts can use softwares like Tableau to get insights from data and build dashboards to guide decision making, without the need of coding.
@@ -48,11 +48,11 @@ How can we apply this evolution to open data?
 
 What we have now, is a bunch of Open Data portals like the one below, from which we can download files in different formats.
 
-![eu-open-data-portal](/assets/uploads/eu-open-data-portal.png)
+![eu-open-data-portal]({{ site.baseurl }}/assets/uploads/eu-open-data-portal.webp)
 
 If we are lucky, we can find something like a reponsive and filterable pivot table, to help us through the datasets. Sometimes, we can even build basic charts out of the web based app.
 
-![eurostat-dynamic-table](/assets/uploads/eurostat-dynamic-table.png)
+![eurostat-dynamic-table]({{ site.baseurl }}/assets/uploads/eurostat-dynamic-table.webp)
 
 Provided that the data is always up to date and accurate, this represents a great starting point for both a Data Journalist and a Data Explorer.
 
@@ -60,7 +60,7 @@ Both will probably start with some un-guided analytics to find interesting angle
 
 A Data Explorer will probably come up with something like this:
 
-[caption id="attachment\_1318" align="alignnone" width="1001"][![explo](/assets/uploads/explo.png)](https://public.tableau.com/views/AccidentsatworkintheEU2014/AccidentsatworkintheEU2014?:embed=y&:display_count=yes) [Click to go to the interactive dashboard](https://public.tableau.com/views/AccidentsatworkintheEU2014/AccidentsatworkintheEU2014?:embed=y&:display_count=yes)[/caption]
+[caption id="attachment\_1318" align="alignnone" width="1001"][![explo]({{ site.baseurl }}/assets/uploads/explo.webp)](https://public.tableau.com/views/AccidentsatworkintheEU2014/AccidentsatworkintheEU2014?:embed=y&:display_count=yes) [Click to go to the interactive dashboard](https://public.tableau.com/views/AccidentsatworkintheEU2014/AccidentsatworkintheEU2014?:embed=y&:display_count=yes)[/caption]
 
 Dashboards like the one above give visual clues to explore the underlying dataset, and because the charts are interrelated, it's easy to filter the view to the perspective we are more interested about.
 

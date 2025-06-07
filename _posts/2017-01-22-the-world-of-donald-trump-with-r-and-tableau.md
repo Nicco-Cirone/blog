@@ -8,7 +8,7 @@ Last week, Buzzfeed released the output of a research they have carried on [all 
 
 I decided I wanted to visualize this dataset on a network chart, showing both the direct and indirect business connections of Trump. See below the end result (click for the interactive version).
 
-[caption id="attachment\_1430" align="alignnone" width="997"][![trump-world](/assets/uploads/trump-world.png)](https://public.tableau.com/views/TrumpWorld/Dashboard1?:embed=y&:display_count=yes) [Trump's world: A network of Trump's connections](https://public.tableau.com/views/TrumpWorld/Dashboard1?:embed=y&:display_count=yes)[/caption]
+[caption id="attachment\_1430" align="alignnone" width="997"][![trump-world]({{ site.baseurl }}/assets/uploads/trump-world.webp)](https://public.tableau.com/views/TrumpWorld/Dashboard1?:embed=y&:display_count=yes) [Trump's world: A network of Trump's connections](https://public.tableau.com/views/TrumpWorld/Dashboard1?:embed=y&:display_count=yes)[/caption]
 
 
 
@@ -24,7 +24,7 @@ If you don't have alteryx, don't worry, I am going to tell you how to replicate 
 
 First, let's have a look at how the alteryx workflow works so we can identify the actions we'll need to take in order to get the network chart done.
 
-![annotated-workflow](/assets/uploads/annotated-workflow.png)
+![annotated-workflow]({{ site.baseurl }}/assets/uploads/annotated-workflow.webp)
 
 Now, let's see how to replicate each of those steps:
 1. Download the google spreadsheet with the data [here](https://docs.google.com/spreadsheets/d/1Z5Vo5pbvxKJ5XpfALZXvCzW26Cl4we3OaN73K9Ae5Ss/edit);
@@ -34,7 +34,7 @@ Now, let's see how to replicate each of those steps:
 5. Save the resulting dataset as a csv file. It should look like this:
 
 
-[caption id="attachment\_1471" align="alignnone" width="616"]![dataset-for-r](/assets/uploads/dataset-for-r.png) We cleaned the data, and are ready to go to R![/caption]
+[caption id="attachment\_1471" align="alignnone" width="616"]![dataset-for-r]({{ site.baseurl }}/assets/uploads/dataset-for-r.webp) We cleaned the data, and are ready to go to R![/caption]
 
 In R studio:
 1. Import the dataset. You can use Tools>Import dataset, or just write in your console:
@@ -73,7 +73,7 @@ Note that "fruchterman.reingold" is the model I chose for the network chart, but
 
 Now you have a csv with the coordinates and names of each point of the network chart. Something like this:
 
-![r-result](/assets/uploads/r-result.png)
+![r-result]({{ site.baseurl }}/assets/uploads/r-result.webp)
 
 We are close now. In order to get the desired result in Tableau, we need to go back to excel and just perform a few more steps.
 1. We need to create a new excel spreadsheet where we copy the first csv file, the one we inputted in R, adding two columns, both called "path", one with "1" for every record, and one with "2".
@@ -87,7 +87,7 @@ We are close now. In order to get the desired result in Tableau, we need to go b
 
 The result should look like this:
 
-![pivot-result](/assets/uploads/pivot-result.png)
+![pivot-result]({{ site.baseurl }}/assets/uploads/pivot-result.webp)
 
 Now the last bit is to setup a lookup that assign for each "Name" the coordinates we got from R.
 1. Copy the csv file resulting from R in the spreadsheet where you are working;
@@ -101,7 +101,7 @@ Now the last bit is to setup a lookup that assign for each "Name" the coordinate
 > Y =VLOOKUP('Trump dataset'!A2,'Trump network in R 2 - Copy'!$A$2:$C$1515,3,0)
 
 
-4. The result should look like this:![Final dataset.PNG](/assets/uploads/final-dataset.png)
+4. The result should look like this:![Final dataset.PNG]({{ site.baseurl }}/assets/uploads/final-dataset.webp)
 
 
 Now we have our dataset ready for Tableau!
@@ -114,4 +114,4 @@ Synchronize the axis, and you are done.
 
 Feel free to ask for any additional explanation in the comments or on twitter, and share with me your network charts!
 
-![canvas.PNG](/assets/uploads/canvas.png)
+![canvas.PNG]({{ site.baseurl }}/assets/uploads/canvas.webp)

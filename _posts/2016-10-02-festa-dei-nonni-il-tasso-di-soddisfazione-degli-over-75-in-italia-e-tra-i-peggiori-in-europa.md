@@ -12,7 +12,7 @@ La dashboard interattiva seguente permette di scomporre l'indice di soddisfazion
 
  
 
-[caption id="attachment\_235" align="alignnone" width="1193"][![db](/assets/uploads/db.png)](https://public.tableau.com/profile/nicco.cirone#!/vizhome/SatisfactionofelderlyEuropeansaged75yearsorolder2013/SatisfactionofelderlyEuropeansaged75yearsorolder) Clicca per esplorare i dati con la dashboard.[/caption]
+[caption id="attachment\_235" align="alignnone" width="1193"][![db]({{ site.baseurl }}/assets/uploads/db.webp)](https://public.tableau.com/profile/nicco.cirone#!/vizhome/SatisfactionofelderlyEuropeansaged75yearsorolder2013/SatisfactionofelderlyEuropeansaged75yearsorolder) Clicca per esplorare i dati con la dashboard.[/caption]
 
 E l'Italia?
 
@@ -20,7 +20,7 @@ E l'Italia?
 
 L'Italia rientra appieno nel quadrante Sud-Est, sia geograficamente, sia in base ai valori degli indicatori.
 
-![pic](/assets/uploads/pic.png)
+![pic]({{ site.baseurl }}/assets/uploads/pic.webp)
 
  
 
@@ -28,7 +28,7 @@ Un indicatore addirittura, "Living Environment", non raggiunge neanche la suffic
 
 Visualizzando poi i dati in un modo che permette una miglior comparazione tra i paesi, il quadro e' ancora piu' deprimente.
 
-![bars](/assets/uploads/bars.png)
+![bars]({{ site.baseurl }}/assets/uploads/bars.webp)
 
 Non solo i nostri anziani hanno una vita sempre, e di gran lunga, meno soddisfacente della media nell'Unione, ma addirittura risultano terzultimi quanto a soddisfazione nel "Living Environment", ventinovesimi (su 33) quanto a "Personal Relationships", e ventottesimi quanto a "Time Use".
 

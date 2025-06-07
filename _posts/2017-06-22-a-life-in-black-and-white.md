@@ -10,7 +10,7 @@ After playing around with a couple of datasets like the IUCN list of threatened 
 
 Here below is my final submission, built around a map of the Antarctic Penguins colonies which uses a polar projection in Tableau. If you want to know I achieved it, with a mix of alteryx and mapbox magic, this post is for you.
 
-[caption id="attachment\_2165" align="alignnone" width="1505"][![A life in black and white](/assets/uploads/a-life-in-black-and-white.png)](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite) [Click to go to the interactive dashboard](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)[/caption]
+[caption id="attachment\_2165" align="alignnone" width="1505"][![A life in black and white]({{ site.baseurl }}/assets/uploads/a-life-in-black-and-white.webp)](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite) [Click to go to the interactive dashboard](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)[/caption]
 
 
 
@@ -30,13 +30,13 @@ Sarah's method works using polar projected coordinates, which basically measure 
 
  
 
-[caption id="attachment\_2166" align="aligncenter" width="519"]![The sites are nicely unwrapped in a Lat/Lon projection](/assets/uploads/capture1.png) The sites are nicely unwrapped on a Lat/Lon projection[/caption]
+[caption id="attachment\_2166" align="aligncenter" width="519"]![The sites are nicely unwrapped in a Lat/Lon projection]({{ site.baseurl }}/assets/uploads/capture1.webp) The sites are nicely unwrapped on a Lat/Lon projection[/caption]
 
 So first I create centroids out of the Lat/Lon fields, and then I can go ahead and use the "Spatial Info" tool to transpose the centroids on polar coordinates.
 
  
 
-[caption id="attachment\_2167" align="aligncenter" width="519"]![Capture2.PNG](/assets/uploads/capture2.png) Using "centroid" spatial objects we transform Lat/Lon in polar coords.[/caption]
+[caption id="attachment\_2167" align="aligncenter" width="519"]![Capture2.PNG]({{ site.baseurl }}/assets/uploads/capture2.webp) Using "centroid" spatial objects we transform Lat/Lon in polar coords.[/caption]
 
 Nice.
 
@@ -50,13 +50,13 @@ To do this, we need a Pseudo-Mercator projection. So we lie to alteryx, and we t
 
  
 
-[caption id="attachment\_2168" align="aligncenter" width="535"]![Capture3.PNG](/assets/uploads/capture3.png) We create new points in a Pseudo Mercator projection[/caption]
+[caption id="attachment\_2168" align="aligncenter" width="535"]![Capture3.PNG]({{ site.baseurl }}/assets/uploads/capture3.webp) We create new points in a Pseudo Mercator projection[/caption]
 
 And this is the result:
 
  
 
-[caption id="attachment\_2169" align="aligncenter" width="521"]![Capture4.PNG](/assets/uploads/capture4.png) Antarctica is now in Africa. Sweet.[/caption]
+[caption id="attachment\_2169" align="aligncenter" width="521"]![Capture4.PNG]({{ site.baseurl }}/assets/uploads/capture4.webp) Antarctica is now in Africa. Sweet.[/caption]
 
 Doing this, we move Antarctica in Africa.
 
@@ -80,7 +80,7 @@ We can just repeat the same process above with a shapefile of continents,,, and 
 
  
 
-[caption id="attachment\_media-17" align="alignnone" width="1500"]![Capture5.PNG](/assets/uploads/capture5.png) Funky![/caption]
+[caption id="attachment\_media-17" align="alignnone" width="1500"]![Capture5.PNG]({{ site.baseurl }}/assets/uploads/capture5.webp) Funky![/caption]
 
  
 

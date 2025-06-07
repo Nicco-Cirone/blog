@@ -6,7 +6,7 @@ layout: post
 
 This month I am working with financial data, so I thought it was a good idea to refresh my financial mathematics knowledge replicating some simple Capital Asset Pricing Modelling (CAPM) in Tableau. The CAPM is a set of mathematic rules used to price assets, based on the general idea that for an investment to be worth it, its risk must be rewarded by an appropriate rate of return. In this blog, I will show how to use Tableau to build the simplest CAPM model: the Efficient Frontier for a two-assets portfolio.
 
-[caption id="attachment\_2186" align="alignnone" width="2000"][![CAPM Efficient Frontier with two assets](/assets/uploads/capm-efficient-frontier-with-two-assets2.png)](https://public.tableau.com/views/CAPMEfficientFrontierforatwo-assetsportfolio/CAPMEfficientFrontierforatwo-assetsportfolio?:embed=y&:display_count=yes&publish=yes) [Click to go to the downloadable Tableau workbook](https://public.tableau.com/views/CAPMEfficientFrontierforatwo-assetsportfolio/CAPMEfficientFrontierforatwo-assetsportfolio?:embed=y&:display_count=yes&publish=yes)[/caption]
+[caption id="attachment\_2186" align="alignnone" width="2000"][![CAPM Efficient Frontier with two assets]({{ site.baseurl }}/assets/uploads/capm-efficient-frontier-with-two-assets2.webp)](https://public.tableau.com/views/CAPMEfficientFrontierforatwo-assetsportfolio/CAPMEfficientFrontierforatwo-assetsportfolio?:embed=y&:display_count=yes&publish=yes) [Click to go to the downloadable Tableau workbook](https://public.tableau.com/views/CAPMEfficientFrontierforatwo-assetsportfolio/CAPMEfficientFrontierforatwo-assetsportfolio?:embed=y&:display_count=yes&publish=yes)[/caption]
 
 
 
@@ -30,7 +30,7 @@ Return ETH -> ln(sum([ETH])/lookup(sum([ETH]),-1))
 
 We can then build a table and check that we are getting the right results.
 
-![1. Returns](/assets/uploads/1-returns.png)
+![1. Returns]({{ site.baseurl }}/assets/uploads/1-returns.webp)
 2.  **Computing the assets expected returns and risk**
 
 
@@ -52,7 +52,7 @@ This is a measure of how similar the two stocks behave, and can also be normaliz
 
 Correlation -> WINDOW\_CORR([Return BTC],[Return ETH])
 
-![2. Returns and mtrics](/assets/uploads/2-returns-and-mtrics.png)
+![2. Returns and mtrics]({{ site.baseurl }}/assets/uploads/2-returns-and-mtrics.webp)
 3.  **Building the scaffold of example portfolios**
 
 
@@ -62,7 +62,7 @@ In order to do that, I created a second datasource that only has the dates for w
 
 In Tableau, using this scaffold as my primary datasource, I can create bins of 0.05 on this measure, and draw a table as the following (Make sure you right click on the Bins pill and turn on “Show missing values”).
 
-![4. Bins](/assets/uploads/4-bins.png)
+![4. Bins]({{ site.baseurl }}/assets/uploads/4-bins.webp)
 
 For each date, I now have a complete set of portfolios, where the weight of an asset can be any 5% increase from 0% to 100%.
 
@@ -72,7 +72,7 @@ The last step I need here, is to build a table calculation that will make use of
 
 and compute it by the bins, which we can now move to the detail shelf.
 
-![5. Table Calc](/assets/uploads/5-table-calc.png)
+![5. Table Calc]({{ site.baseurl }}/assets/uploads/5-table-calc.webp)
 4.  **Computing the portfolios’ return and standard deviation**
 
 
@@ -86,13 +86,13 @@ Portfolio StDev -> sqrt(([% BTC]^2)*[comparison].[VarP BTC] + ((1-[%BTC])^2)*[co
 
 Now, if we bring these two metrics in the table we can see the expected return and the standard deviation of the portfolio, which will depend on the % weight split, but will repeat the same values for each date split.
 
-![6. Return and StDev on bins](/assets/uploads/6-return-and-stdev-on-bins.png)
+![6. Return and StDev on bins]({{ site.baseurl }}/assets/uploads/6-return-and-stdev-on-bins.webp)
 5.  **Build the frontier**
 
 
 To build the frontier, we start moving the Portfolio Return calculation on rows, and the Portfolio StDev on columns. We then can remove the % BTC field from rows, and because we have the bins in the details shelf, the curves will now appear, split by date.
 
-![7. Curves](/assets/uploads/7-curves.png)
+![7. Curves]({{ site.baseurl }}/assets/uploads/7-curves.webp)
 
 Now, before we can move the date to the Detail shelf as well, we need to make sure all the nested table calculations we are using are partitioned and addressed in the right way.
 
@@ -102,7 +102,7 @@ When we are done, we can move Date in the details shelf and we have our plot of 
 
 The convex line that passes through them is the set of all feasible portfolios (without shorts and leverage).
 
-![8. Frontier](/assets/uploads/8-frontier.png)
+![8. Frontier]({{ site.baseurl }}/assets/uploads/8-frontier.webp)
 6.  **Final adjustments**
 
 

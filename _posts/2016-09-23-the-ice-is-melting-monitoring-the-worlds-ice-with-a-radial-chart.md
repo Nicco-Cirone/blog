@@ -15,13 +15,13 @@ Using this dashboard, it is possible to get two information at a glance:
 
  
 
-[caption id="attachment\_110" align="alignnone" width="1057"]![ice-is-melting](/assets/uploads/ice-is-melting.png) [Click for the interactive dashboard](https://public.tableau.com/views/Theiceismelting_/Theiceismelting_?:embed=y&:display_count=yes)[/caption]
+[caption id="attachment\_110" align="alignnone" width="1057"]![ice-is-melting]({{ site.baseurl }}/assets/uploads/ice-is-melting.webp) [Click for the interactive dashboard](https://public.tableau.com/views/Theiceismelting_/Theiceismelting_?:embed=y&:display_count=yes)[/caption]
 
 
 
 Central Artic, for instance, is almost always 100% covered by ice, except Jul-Sep when some of it melts. Contrariwise, Baltic Sea has never been fully covered, and in the latest year has suffered a huge reduction of ice coverage. Greenland Sea is never 100% covered, but also never fully melted, and the effect of global warming on it is slowly, but steady.
 
-![ices](/assets/uploads/ices.png)
+![ices]({{ site.baseurl }}/assets/uploads/ices.webp)
 **Building the radial chart**
 
 Building this kind of chart in Tableau is all but difficult. All you need is to refresh some notions of goniometry to extrapolate the XY coordinates.

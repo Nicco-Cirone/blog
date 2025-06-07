@@ -6,7 +6,7 @@ layout: post
 
 On Tuesday, the world wake up with a new POTUS, and the media were filled with data visualizations of the result. An electoral dataviz that never gets old is the "choropleth map", like the one below:
 
-![choropleth](/assets/uploads/choropleth.png)
+![choropleth]({{ site.baseurl }}/assets/uploads/choropleth.webp)
 
 However, despite popularity and ease of interpretation, this map can be told inaccurate for a very simple reason: it suggests to the eye a disproportioned result, based on State's areas, not actual votes.
 
@@ -29,8 +29,8 @@ Provoked by the article, and pleased by the result of FT's "search for a better 
 
 Here's the final result:
 
-[caption id="attachment\_722" align="aligncenter" width="996"][![snip](/assets/uploads/snip.png)](http://tabsoft.co/2fFai6L) [Click to go to the interactive dashboard](http://tabsoft.co/2fFai6L)[/caption]
+[caption id="attachment\_722" align="aligncenter" width="996"][![snip]({{ site.baseurl }}/assets/uploads/snip.webp)](http://tabsoft.co/2fFai6L) [Click to go to the interactive dashboard](http://tabsoft.co/2fFai6L)[/caption]
 
 In order to get there, I built the following alteryx workflow:
 
-[caption id="attachment\_719" align="alignnone" width="1744"][![alteryx-workflow](/assets/uploads/alteryx-workflow.png)](http://prezi.com/c87xio6ocdoy/?utm_campaign=share&utm_medium=copy&rc=ex0share) [Click to go to the explanatory prezi](http://prezi.com/c87xio6ocdoy/?utm_campaign=share&utm_medium=copy&rc=ex0share)[/caption]
+[caption id="attachment\_719" align="alignnone" width="1744"][![alteryx-workflow]({{ site.baseurl }}/assets/uploads/alteryx-workflow.webp)](http://prezi.com/c87xio6ocdoy/?utm_campaign=share&utm_medium=copy&rc=ex0share) [Click to go to the explanatory prezi](http://prezi.com/c87xio6ocdoy/?utm_campaign=share&utm_medium=copy&rc=ex0share)[/caption]

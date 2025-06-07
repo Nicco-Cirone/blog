@@ -8,7 +8,7 @@ This week I spent my free time stretching and refreshing my (high school) knowle
 
  
 
-[caption id="attachment\_1584" align="aligncenter" width="999"][![never-stop-exploring](/assets/uploads/never-stop-exploring.png)](https://public.tableau.com/views/NeverStopExploringAllthemissionstoMarsandtheMoonsofar/NEVERSTOPEXPLORING-AllthemissionstoMarsandtheMoon?:embed=y&:display_count=yes) [Click to go to the interactive tableau viz.](https://public.tableau.com/views/NeverStopExploringAllthemissionstoMarsandtheMoonsofar/NEVERSTOPEXPLORING-AllthemissionstoMarsandtheMoon?:embed=y&:display_count=yes)[/caption]
+[caption id="attachment\_1584" align="aligncenter" width="999"][![never-stop-exploring]({{ site.baseurl }}/assets/uploads/never-stop-exploring.webp)](https://public.tableau.com/views/NeverStopExploringAllthemissionstoMarsandtheMoonsofar/NEVERSTOPEXPLORING-AllthemissionstoMarsandtheMoon?:embed=y&:display_count=yes) [Click to go to the interactive tableau viz.](https://public.tableau.com/views/NeverStopExploringAllthemissionstoMarsandtheMoonsofar/NEVERSTOPEXPLORING-AllthemissionstoMarsandtheMoon?:embed=y&:display_count=yes)[/caption]
 
  
 
@@ -20,7 +20,7 @@ Last weekend, with some fellow Data Schoolers, I went to the exhibition "Maps a
 
 While waiting for people to come, I was leafing through the books in the Library's shop and came across a munificent infographic from the NASA about missions to space:
 
-[caption id="attachment\_1601" align="alignnone" width="3861"][![11049](/assets/uploads/11049.jpg)](/assets/uploads/11049.jpg) [Source: www.jpl.nasa.com](/assets/uploads/11049.jpg)[/caption]
+[caption id="attachment\_1601" align="alignnone" width="3861"][![11049]({{ site.baseurl }}/assets/uploads/11049.webp)]({{ site.baseurl }}/assets/uploads/11049.webp) [Source: www.jpl.nasa.com]({{ site.baseurl }}/assets/uploads/11049.webp)[/caption]
 
 I immediately asked myself if it would have been possible to mimic such great design in Tableau.
 
@@ -32,7 +32,7 @@ Since the very first moment I decided to commit myself to building such viz, I 
 
 A bit like Adam McCann did in this epic Game of Thrones viz:
 
-[caption id="attachment\_1623" align="aligncenter" width="330"][![got](/assets/uploads/got.png)](https://public.tableau.com/en-us/s/gallery/game-thrones-0) [Click for interactive Tableau viz.](https://public.tableau.com/en-us/s/gallery/game-thrones-0)[/caption]
+[caption id="attachment\_1623" align="aligncenter" width="330"][![got]({{ site.baseurl }}/assets/uploads/got.webp)](https://public.tableau.com/en-us/s/gallery/game-thrones-0) [Click for interactive Tableau viz.](https://public.tableau.com/en-us/s/gallery/game-thrones-0)[/caption]
 
 His curves are easier, though, as they are only two different portions of two circles with the same radius, one starting where the other ends.
 
@@ -46,7 +46,7 @@ Crack on, then!
 
 The first approach that came to my mind was to start drawing the circles, and then join the end points of the circles using the same sigmoids we use to create charts like sankeys, or this viz by Jeffrey Shaffer.
 
-[caption id="attachment\_1657" align="aligncenter" width="472"][![jeffrey-shaffer](/assets/uploads/jeffrey-shaffer.png)](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample) [Click for interactive Tableau viz.](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample)[/caption]
+[caption id="attachment\_1657" align="aligncenter" width="472"][![jeffrey-shaffer]({{ site.baseurl }}/assets/uploads/jeffrey-shaffer.webp)](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample) [Click for interactive Tableau viz.](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample)[/caption]
 **But this won't work!**
 
 
@@ -54,13 +54,13 @@ Indeed it didn't, and now I know, but it sounded reasonable at the time. Honestl
 
 Circles are sets of points with the same distance r (radius) from the center, and they lay on angles from 0 to 360. Therefore, to draw the circles in excel, we start from a column of numbers from 0 to 360. We then need to multiply those angles for PI/180 to get the values in radians. The Cosine of those values will give us the "X" coordinates, and the Sine will give us the "Y" coordinates for a circle of radius one.
 
-![1-circle](/assets/uploads/1-circle1.png)
+![1-circle]({{ site.baseurl }}/assets/uploads/1-circle1.webp)
 
 Sweet! Now we can also exclude some of the angles: degrees 0 to 180, for instance, will give us semicircles. We can also change other parameters to modify the shape of the circle: We can multiply X and Y for the same number to set the radius of the circle to be that number, or we can add a value to either the X or the Y, to move the circle on the cartesian plane.
 
 Tweaking those parameters, I ended up with two opposite semicircles of different angles, radii, and position, that I was then planning to join with a sigmoid:
 
-![2-two-opposite-75-circles](/assets/uploads/2-two-opposite-75-circles1.png)
+![2-two-opposite-75-circles]({{ site.baseurl }}/assets/uploads/2-two-opposite-75-circles1.webp)
 **Let me introduce the Sigmoid**
 
 
@@ -73,7 +73,7 @@ I started from the equation for a simple sigmoid (or 'logarithmic curve'):
 
 Easy peasy:
 
-![sigmoid-1](/assets/uploads/sigmoid-1.png)
+![sigmoid-1]({{ site.baseurl }}/assets/uploads/sigmoid-1.webp)
 
 On Jeff's website, I also learned that the way to connect two points with a sigmoid is changing that function to:
 
@@ -84,7 +84,7 @@ Where "sigmoid" is the above-mentioned sigmoid function, and clearly the X of th
 
 At that point, I thought I had all I needed to link the two semicircles I already built, and get the shape I wanted.
 
-![2-two-opposite-75-circles-with-sigm](/assets/uploads/2-two-opposite-75-circles-with-sigm1.png)
+![2-two-opposite-75-circles-with-sigm]({{ site.baseurl }}/assets/uploads/2-two-opposite-75-circles-with-sigm1.webp)
 
  
 **Wrong, wrong, wrong!**
@@ -94,17 +94,17 @@ At that point, I thought I had all I needed to link the two semicircles I alread
 
 I wanted to go from -4,4 to 4,2, so I drew a column of numbers between -4 and 4 (that would have been my X coordinates), and applied the formula I just found to those.
 
-![sigmoid-2-btw-two-points](/assets/uploads/sigmoid-2-btw-two-points.png)
+![sigmoid-2-btw-two-points]({{ site.baseurl }}/assets/uploads/sigmoid-2-btw-two-points.webp)
 
 Seems quite right, but actually it's not. What that formula does is to draw a sigmoid setting its **asymptotes** at the desired starting and ending point!
 
 The asymptotes of the sigmoids are the lines toward which the curve tends, but that will never touch (well, at infinite does). The problem can be appreciated more easily with a wider sigmoid - the one below goes from -12 to 12. Note how it tends to 0 and 1, but never gets there:
 
-![sigmoid-3-asymptotes](/assets/uploads/sigmoid-3-asymptotes.png)
+![sigmoid-3-asymptotes]({{ site.baseurl }}/assets/uploads/sigmoid-3-asymptotes.webp)
 
 Therefore, no matter how hard I tried, there was no way to connect the sigmoid to the circles, it was always slightly off!
 
-![Sigmoid and semicircles - Wrong.PNG](/assets/uploads/sigmoid-and-semicircles-wrong.png)
+![Sigmoid and semicircles - Wrong.PNG]({{ site.baseurl }}/assets/uploads/sigmoid-and-semicircles-wrong.webp)
 
 If this is OK in other visualizations, like sankeys and curve slope charts, it was awful in my viz, because it created an undesired "step" between the semicircles and the sigmoid. :(
 
@@ -120,13 +120,13 @@ Let's start from the first one. As we want our semicircle to get to -4,3.964028
 
 For the second circle, multiplying for (2-D$263/2) both X and Y is enough to scale the circle to the right position. Here is the end result:
 
-![sigmoid-and-semicircles-right](/assets/uploads/sigmoid-and-semicircles-right.png)
+![sigmoid-and-semicircles-right]({{ site.baseurl }}/assets/uploads/sigmoid-and-semicircles-right.webp)
 
  
 
 At this point, I created multiple columns in excel to assess the scalability of my model, setting the distance between each sigmoid to 0.5. to check my results and assess the scalability of this model
 
-![Mars and The Moon excel.PNG](/assets/uploads/mars-and-the-moon-excel.png)
+![Mars and The Moon excel.PNG]({{ site.baseurl }}/assets/uploads/mars-and-the-moon-excel.webp)
 
 Note that because of the way the calculations are built, the second circle will get formed by different parallel circles, while the first one will always adjust having the "origin" in common.
 
@@ -134,6 +134,6 @@ At this point, the only thing left was creating an alteryx workflow (find it [he
 
 I also had to iteratively adjust the radii of the circles and their position to make them look nice. I also decided to scale the end of each circle, from 270 degrees of the inner ones, to less than 180 for the Moon's most external one.
 
-![alteryx.PNG](/assets/uploads/alteryx.png)
+![alteryx.PNG]({{ site.baseurl }}/assets/uploads/alteryx.webp)
 
  

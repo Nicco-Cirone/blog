@@ -6,7 +6,7 @@ layout: post
 
 Qualche tempo fa mi sono imbattuto in [questo tweet](https://twitter.com/24infodata/status/654210893589409792) di @24InfoData, il Data Blog del Sole 24 Ore, rimandante a questa visualizzazione sugli introiti dello Stato Italiano provenienti dalla privatizzazioni delle societa' pubbliche:
 
-![Sole24Ore Privatizzazioni Originale](/assets/uploads/sole24ore-privatizzazioni-originale.png)
+![Sole24Ore Privatizzazioni Originale]({{ site.baseurl }}/assets/uploads/sole24ore-privatizzazioni-originale.webp)
 
 Sebbene i dati di base siano ottimi, e la visualizzazione interessante, a mio avviso alcuni aggiornamenti possono renderne piu' agevole la lettura.
 - Il grafico a bolle e' difficile da leggere, per paragonare le grandezze il lettore deve fare riferimento alle etichette, le quali raramente riportano i valori dell'indicatore;
@@ -16,4 +16,4 @@ Sebbene i dati di base siano ottimi, e la visualizzazione interessante, a mio av
 
 Clicca sull'immagine qui sotto, per vedere la mia versione!
 
-[![Makeoverdi](/assets/uploads/makeoverdi1.png)](https://public.tableau.com/profile/niccol.#!/vizhome/MakeoverdiQuantohaincassatoloStatodalleprivatizzazioni/QuantohaincassatoloStatodalleprivatizzazioni)
+[![Makeoverdi]({{ site.baseurl }}/assets/uploads/makeoverdi1.webp)](https://public.tableau.com/profile/niccol.#!/vizhome/MakeoverdiQuantohaincassatoloStatodalleprivatizzazioni/QuantohaincassatoloStatodalleprivatizzazioni)

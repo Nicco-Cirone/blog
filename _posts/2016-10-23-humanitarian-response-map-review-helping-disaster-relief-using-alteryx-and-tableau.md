@@ -10,7 +10,7 @@ And this has really been the case. Since then, I have been involved in a proje
 
 The output of the project is the dashboard below: basically a visual way for decision makers on emergency fields to quickly filter the multitude of maps created by various organizations and find the ones that suit their needs.
 
-[caption id="attachment\_517" align="alignnone" width="1010"][![Screenshot.PNG](/assets/uploads/screenshot.png)](http://digitalhumanitarians.com/resource/map-filter-haiti) [Click to go to the project's site](http://digitalhumanitarians.com/resource/map-filter-haiti)[/caption]
+[caption id="attachment\_517" align="alignnone" width="1010"][![Screenshot.PNG]({{ site.baseurl }}/assets/uploads/screenshot.webp)](http://digitalhumanitarians.com/resource/map-filter-haiti) [Click to go to the project's site](http://digitalhumanitarians.com/resource/map-filter-haiti)[/caption]
 
 
 
@@ -30,7 +30,7 @@ That's why when the project was re-activated for Hurricane Matthew, I decided to
 
 Here below the Alteryx module I came up with:
 
-![workflow](/assets/uploads/workflow.png)
+![workflow]({{ site.baseurl }}/assets/uploads/workflow.webp)
 
 This workflow automates all the data scraping process: the only thing I have to do in order to update the dashboard's datasource and the custom shapes folder is run it.
 
@@ -38,13 +38,13 @@ First, the google sheet input tool automatically connects to the spreadsheet the
 
 After retrieving the data, the first step of the data preparation process is transposing - in two steps - the geographic data (for the map) and the metadata (for the word cloud and the key questions).
 
-![workflow-1](/assets/uploads/workflow-1.png)
+![workflow-1]({{ site.baseurl }}/assets/uploads/workflow-1.webp)
 
 The second part of the workflow connects to a different sheet of the same google spreadsheet, where each of the datasets encoded in the maps is paired with a 'word cloud friendly' tuple. Then some 'ad hoc adjustments' get rid of typos and standardize names.
 
 I finally output both a .tde (connected to the dashboard) and an excel file (just in case).
 
-![workflow-2](/assets/uploads/workflow-2.png)
+![workflow-2]({{ site.baseurl }}/assets/uploads/workflow-2.webp)
 
 Now, on to the fun bit.
 
@@ -56,7 +56,7 @@ I then join those file names to the ones in the latest google sheet taking only
 
 This stream allows me to use a download tool to get the images, and then a 'blob output' to save them as .png in my custom shapes folder.
 
-![workflow-3](/assets/uploads/workflow-3.png)
+![workflow-3]({{ site.baseurl }}/assets/uploads/workflow-3.webp)
 
 The only manual step still in place is to assign the correct custom shape to each map. Unfortunately, at the moment I am not able to automate this last bit being 100% sure that the match is correct.
 
