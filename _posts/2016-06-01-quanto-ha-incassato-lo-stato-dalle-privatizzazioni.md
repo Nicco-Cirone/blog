@@ -2,7 +2,7 @@
 title: "Quanto ha incassato lo Stato dalle privatizzazioni?"
 date: 2016-06-01 18:48:40
 layout: post
-categories: [ Data Visualization, Tableau, Makeover ]
+categories: [ Data Visualization, Tableau, Italy ]
 ---
 
 Qualche tempo fa mi sono imbattuto in [questo tweet](https://twitter.com/24infodata/status/654210893589409792) di @24InfoData, il Data Blog del Sole 24 Ore, rimandante a questa visualizzazione sugli introiti dello Stato Italiano provenienti dalla privatizzazioni delle societa' pubbliche:
