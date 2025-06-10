@@ -3,6 +3,7 @@ title: "The world of Donald Trump, visualized with R and Tableau"
 date: 2017-01-22 16:50:52
 layout: post
 categories: [ Data Visualization, Tableau, Data Engineering, R ]
+image: assets/uploads/trump-world.webp
 ---
 
 Last week, Buzzfeed released the output of a research they have carried on [all the connections that Donald Trump holds with people and organizations](https://www.buzzfeed.com/johntemplon/help-us-map-trumpworld?utm_term=.id9yRvkqnp#.diLxNgZGkw).
