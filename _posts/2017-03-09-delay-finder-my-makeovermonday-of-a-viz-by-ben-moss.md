@@ -23,11 +23,9 @@ As an Italian expat in London, I can easily qualify as an interested audience, a
 
 Here's Ben'dashboard:
 
-[caption id="attachment\_2137" align="alignnone" width="879"][![dashie]({{ site.baseurl }}/assets/uploads/dashie.webp)](https://public.tableau.com/profile/ben.moss3243#!/vizhome/DelayFinder/DelayFinder) [Click to go to the interactive dashboard](https://public.tableau.com/profile/ben.moss3243#!/vizhome/DelayFinder/DelayFinder)[/caption]
+[![dashie]({{ site.baseurl }}/assets/uploads/dashie.webp)](https://public.tableau.com/profile/ben.moss3243#!/vizhome/DelayFinder/DelayFinder) [Click to go to the interactive dashboard](https://public.tableau.com/profile/ben.moss3243#!/vizhome/DelayFinder/DelayFinder)
 
 This peculiar cocktail of interest, good data, and friendship made me willing to apply to Ben's dashboard the rules of both the MakeoverMonday project and the framework outlined by Stephen Few.
-
-
 
 First, I downloaded Ben's workbook from Tableau Public. I constrained myself to the fields I found and to a hour time. Then I started asking myself the MakeoverMonday questions:
 
