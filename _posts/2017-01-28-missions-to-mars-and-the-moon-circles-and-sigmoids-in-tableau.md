@@ -9,7 +9,7 @@ image: assets/uploads/never-stop-exploring.webp
 
 This week I spent my free time stretching and refreshing my (high school) knowledge of plotting exponential functions. Here below the end result: A visualization in Tableau of all the missions to Mars and the Moon so far, represented by curved lines and sorted by recency.
 
-[![never-stop-exploring]({{ site.baseurl }}/assets/uploads/never-stop-exploring.webp)]
+![never-stop-exploring]({{ site.baseurl }}/assets/uploads/never-stop-exploring.webp)
 <p style="text-align: center;"><a href="https://public.tableau.com/views/NeverStopExploringAllthemissionstoMarsandtheMoonsofar/NEVERSTOPEXPLORING-AllthemissionstoMarsandtheMoon?:embed=y&amp;:display_count=yes" target="_blank" rel="noopener noreferrer">Click to go to the interactive tableau viz.</a></p>
 
 **Where did the idea come from?**
