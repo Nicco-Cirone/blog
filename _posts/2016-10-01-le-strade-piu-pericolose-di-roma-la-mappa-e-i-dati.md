@@ -3,6 +3,8 @@ title: "Le strade piu' pericolose di Roma: La mappa e i dati."
 date: 2016-10-01 13:39:38
 layout: post
 categories: [ Data Visualization, Tableau, Italy ]
+author: Nicco
+image: assets/uploads/le-strade-piu-pericolose-di-roma.webp
 ---
 
 Segnaletica inesistente, intersezioni non regolate, luminosita' insufficiente, buche.
