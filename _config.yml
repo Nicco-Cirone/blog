@@ -17,11 +17,11 @@ authors:
   Nicco:
     name: Nicco
     display_name: Nicco
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    gravatar: https://gravatar.com/niccocirone
     linkedin: https://www.linkedin.com/in/niccolocirone/
     web: https://www.niccocirone.com
    # twitter: https://twitter.com/wowthemesnet
-    description: "Experienced data and AI programme manager with extensive know-how in leading multidisciplinary teams of data scientists, ML engineers, and subject matter experts to build and implement transformative AI solutions"
+    description: "Experienced data and AI programme manager with extensive know-how in leading multidisciplinary teams of data scientists, ML engineers, and subject matter experts to build and implement transformative AI solutions."
   
 # Plugins
 plugins:
