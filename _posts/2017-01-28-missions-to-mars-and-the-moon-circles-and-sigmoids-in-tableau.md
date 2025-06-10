@@ -1,5 +1,6 @@
 ---
 title: "Missions to Mars and the Moon: circles and sigmoids in Tableau"
+author: Nicco
 date: 2017-01-28 22:33:52
 layout: post
 categories: [ Data Visualization, Tableau ]
