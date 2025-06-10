@@ -37,4 +37,5 @@ Here's the final result:
 
 In order to get there, I built the following alteryx workflow:
 
-[caption id="attachment\_719" align="alignnone" width="1744"][![alteryx-workflow]({{ site.baseurl }}/assets/uploads/alteryx-workflow.webp)](http://prezi.com/c87xio6ocdoy/?utm_campaign=share&utm_medium=copy&rc=ex0share) [Click to go to the explanatory prezi](http://prezi.com/c87xio6ocdoy/?utm_campaign=share&utm_medium=copy&rc=ex0share)[/caption]
+[![alteryx-workflow]({{ site.baseurl }}/assets/uploads/alteryx-workflow.webp)](http://prezi.com/c87xio6ocdoy/?utm_campaign=share&utm_medium=copy&rc=ex0share) 
+[Click to go to the explanatory prezi](http://prezi.com/c87xio6ocdoy/?utm_campaign=share&utm_medium=copy&rc=ex0share)
