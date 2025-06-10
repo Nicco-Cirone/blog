@@ -1,5 +1,6 @@
 ---
 title: "Humanitarian Response Map Review -  Helping disaster relief using Alteryx and Tableau"
+author: Nicco
 date: 2016-10-23 13:16:26
 layout: post
 categories: [ Data Visualization, Tableau, Data Engineering, Alteryx, Social Impact ]
