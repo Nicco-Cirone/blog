@@ -1,5 +1,6 @@
 ---
 title: "CAPM Financial Model in Tableau: Efficient frontier for a two assets portfolio"
+author: Nicco
 date: 2017-11-19 20:22:32
 layout: post
 categories: [ Data Visualization, Tableau ]
