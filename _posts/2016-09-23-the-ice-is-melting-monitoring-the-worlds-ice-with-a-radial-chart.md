@@ -3,6 +3,7 @@ title: "The ice is melting. Monitoring the world's ice with a radial chart."
 date: 2016-09-23 16:49:03
 layout: post
 categories: [ Data Visualization, Tableau, Ironviz ]
+image: assets/uploads/ice-is-melting.webp
 featured: true
 ---
 
