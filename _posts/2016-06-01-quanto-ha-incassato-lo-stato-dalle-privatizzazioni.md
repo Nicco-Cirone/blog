@@ -1,5 +1,6 @@
 ---
 title: "Quanto ha incassato lo Stato dalle privatizzazioni?"
+author: Nicco
 date: 2016-06-01 18:48:40
 layout: post
 categories: [ Data Visualization, Tableau, Italy ]
