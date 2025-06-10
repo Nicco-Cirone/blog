@@ -21,13 +21,13 @@ I realized that the local setup was more effort than it was worth — so I pivot
 **Discovering GitHub Codespaces**
 I switched to GitHub Codespaces, a remote development environment with Jekyll pre-installed and no local config headaches. Within minutes, I had a working dev environment.
 
-I created a repo (/blog) with an empty README.md, installed Jekyll via bundle, and served the site. Success: I saw the default Jekyll homepage live at https://niccocirone.com/blog.
+I created a repo (/blog) with an empty `README.md`, installed Jekyll via bundle, and served the site. Success: I saw the default Jekyll homepage live at https://niccocirone.com/blog.
 
 **Migrating WordPress Content**
 WordPress lets you export your entire blog as an XML file. I downloaded mine and used jekyll-import to convert it into Markdown files in the _posts/ folder.
 This mostly worked, but images didn’t display — they referenced WordPress-hosted paths. So the next step was to write a script to download every image from the export and place them in assets/uploads/, then updated the Markdown files to use:
 
-'![Alt text]({{ site.baseurl }}/assets/uploads/image.webp)'
+`![Alt text]({{ site.baseurl }}/assets/uploads/image.webp)`
 
 I also decided to convert every image to WebP for performance and consistency. Using a shell script and the cwebp tool, I batch-converted ~140 images and removed the originals.
 
@@ -35,8 +35,8 @@ I also decided to convert every image to WebP for performance and consistency. U
 I wanted a nicer layout than the default. After evaluating a few, I chose Mediumish — clean, readable, and popular among technical writers.
 I copied the theme into my repo and adjusted _config.yml to include:
 
-'remote_theme: "wowthemesnet/mediumish-theme-jekyll"
-baseurl: "/blog"'
+`remote_theme: "wowthemesnet/mediumish-theme-jekyll"
+baseurl: "/blog"`
 
 Then everything broke.
 
@@ -45,19 +45,19 @@ Despite all the posts being in _posts/ with correct front matter (layout: post, 
 
 I tried everything:
 
-* Switching from paginator.posts to site.posts
-* Rewriting index.html with just a bullet list of post titles
-* Adding future: true in _config.yml
+* Switching from `paginator.posts` to site.posts
+* Rewriting `index.html` with just a bullet list of post titles
+* Adding future: true in `_config.yml`
 * Changing layouts from default to home and back
-* Confirming that '{{ content }}' existed in default.html
+* Confirming that `{{ content }}` existed in default.html
 
-Nothing worked — until I realized that category pages (like /categories.html) actually did show the posts. That meant the posts were fine, but the homepage loop wasn’t working.
+Nothing worked — until I realized that category pages (like `/categories.html`) actually did show the posts. That meant the posts were fine, but the homepage loop wasn’t working.
 
 Eventually, I suspected that either:
 
-* site.posts wasn’t being populated on the homepage
+* `site.posts` wasn’t being populated on the homepage
 * GitHub Pages wasn’t running a proper Jekyll build
-* Or the layout chain (index.html → home.html → default.html) had a disconnect
+* Or the layout chain (`index.html` → `home.html` → `default.html`) had a disconnect
 
 I dug deeper into the differences between my local build and GitHub Pages. Locally, using GitHub Codespaces with `bundle exec jekyll serve`, everything looked perfect — posts appeared, the “Featured” section worked, pagination was fine.
 But the live site at `niccocirone.com/blog` remained broken. No featured posts. No main content. Just a skeleton.
