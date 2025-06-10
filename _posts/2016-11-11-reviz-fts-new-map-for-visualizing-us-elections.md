@@ -1,5 +1,6 @@
 ---
 title: "#ReViz: FT's new map for visualizing US elections"
+author: Nicco
 date: 2016-11-11 14:08:09
 layout: post
 categories: [ Data Visualization, Tableau ]
