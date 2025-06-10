@@ -13,6 +13,5 @@ I gathered data on refugee status applications in European countries, illegal cr
 
 The final result aims to illustrate the hope-guided journey of people who risk everything for the simple hope of a better and safer life for themselves and their families.
 
-No person is illegal.
-
-[caption id="attachment\_2158" align="alignnone" width="811"][![Refugee Crisis in Europe]({{ site.baseurl }}/assets/uploads/refugee-crisis-in-europe.webp)](https://public.tableau.com/views/RefugeecrisisinEurope_0/RefugeeCrisisinEurope?:embed=y&:display_count=yes) [Click to go to the interactive dashboard.](https://public.tableau.com/views/RefugeecrisisinEurope_0/RefugeeCrisisinEurope?:embed=y&:display_count=yes)[/caption]
+[![Refugee Crisis in Europe]({{ site.baseurl }}/assets/uploads/refugee-crisis-in-europe.webp)](https://public.tableau.com/views/RefugeecrisisinEurope_0/RefugeeCrisisinEurope?:embed=y&:display_count=yes)
+[Click to go to the interactive dashboard.](https://public.tableau.com/views/RefugeecrisisinEurope_0/RefugeeCrisisinEurope?:embed=y&:display_count=yes)
