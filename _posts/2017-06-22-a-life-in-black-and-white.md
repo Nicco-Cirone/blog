@@ -5,7 +5,7 @@ date: 2017-06-22 11:11:52
 layout: post
 categories: [ Data Visualization, Tableau, Ironviz ]
 featured: true
-image: assets/uploads/a-life-in-black-and-white.webp
+image: assets/uploads/penguins.webp
 ---
 
 It's that time of the year again, when Tableau hosts another round of the #IronViz competition. This time the topic is "Safari": Animals & Plants.
