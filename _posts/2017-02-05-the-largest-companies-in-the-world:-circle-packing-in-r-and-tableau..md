@@ -3,6 +3,7 @@ title: "The largest companies in the world: Circle packing in R and Tableau."
 date: 2017-02-05 14:55:32
 layout: post
 categories: [ Data Visualization, Tableau ]
+hidden: true
 ---
 
 Since version 8, Tableau offers a native circle-packing algorithm to produce bubble charts.
