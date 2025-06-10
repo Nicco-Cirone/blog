@@ -16,12 +16,8 @@ Using this dashboard, it is possible to get two information at a glance:
 * The different seasonalities of the regions, that draw totally different shapes;
 * The effect of climate change on the ice extent of different regions.
 
-
- 
-
-[caption id="attachment\_110" align="alignnone" width="1057"]![ice-is-melting]({{ site.baseurl }}/assets/uploads/ice-is-melting.webp) [Click for the interactive dashboard](https://public.tableau.com/views/Theiceismelting_/Theiceismelting_?:embed=y&:display_count=yes)[/caption]
-
-
+![ice-is-melting]({{ site.baseurl }}/assets/uploads/ice-is-melting.webp) 
+[Click for the interactive dashboard](https://public.tableau.com/views/Theiceismelting_/Theiceismelting_?:embed=y&:display_count=yes)
 
 Central Artic, for instance, is almost always 100% covered by ice, except Jul-Sep when some of it melts. Contrariwise, Baltic Sea has never been fully covered, and in the latest year has suffered a huge reduction of ice coverage. Greenland Sea is never 100% covered, but also never fully melted, and the effect of global warming on it is slowly, but steady.
 
@@ -32,20 +28,20 @@ Building this kind of chart in Tableau is all but difficult. All you need is to 
 
 First, we need a ‘X’ variable, defined as:
 
-X = (2*PI()/365*[#Day])
+`X = (2*PI()/365*[#Day])`
 
-With [#Day] going from 1 to 365.
+`With [#Day] going from 1 to 365.`
 
 Because Cos(X) and Sin(X) would give us coordinates for a circle of 365 points and ray=1, we now want to multiply those by the metric to encode – in our case ‘Ice Extent’:
 
-X Coord = cos([X])*[Ice extent]
+`X Coord = cos([X])*[Ice extent]`
 
-Y Coord = sin([X])*[Ice extent]
+`Y Coord = sin([X])*[Ice extent]`
 
 The last step is dragging the coordinates on rows and columns, change the mark to be a line, and drag a field with the actual dates on the 'path' shelf. That's it!
 
 Note that the csv I chose didn't have a field like that, but only a field with a number formed by the year plus the day number (i.e. from 201601 to 2016365), so that I used this calc to build the date:
 
-DATE(DATEADD('day',[#Day]-1,DATE(str([Year])+"-01-01")))
+`DATE(DATEADD('day',[#Day]-1,DATE(str([Year])+"-01-01")))`
 
-with [Year] being left([Day],4).
+`with [Year] being left([Day],4)`
