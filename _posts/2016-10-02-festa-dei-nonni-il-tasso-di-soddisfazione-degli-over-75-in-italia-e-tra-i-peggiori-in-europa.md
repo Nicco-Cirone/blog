@@ -1,6 +1,8 @@
 ---
 title: "Festa dei Nonni: Il tasso di soddisfazione degli over 75 in Italia e' tra i peggiori in Europa."
 date: 2016-10-02 18:56:38
+author: Nicco
+image: assets/uploads/db.webp
 layout: post
 categories: [ Data Visualization, Tableau, Italy ]
 ---
