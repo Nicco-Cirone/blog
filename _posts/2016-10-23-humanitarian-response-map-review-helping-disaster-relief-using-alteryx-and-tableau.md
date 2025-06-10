@@ -4,6 +4,7 @@ date: 2016-10-23 13:16:26
 layout: post
 categories: [ Data Visualization, Tableau, Data Engineering, Alteryx, Social Impact ]
 featured: true
+image: assets/uploads/screenshot.webp
 ---
 
 At the beginning of this year, I decided to get involved in the [Tableau Foundation Service Corps](https://servicecorps.tableaufoundation.org/): a group of people volunteering for charities and no profit organizations using Tableau. At the time, I was really excited to join this project, as to me it represented a great opportunity to put my skills at the service of good causes.
