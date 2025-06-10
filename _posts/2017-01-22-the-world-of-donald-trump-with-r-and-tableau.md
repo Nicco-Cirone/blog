@@ -1,5 +1,6 @@
 ---
 title: "The world of Donald Trump, visualized with R and Tableau"
+author: Nicco
 date: 2017-01-22 16:50:52
 layout: post
 categories: [ Data Visualization, Tableau, Data Engineering, R ]
