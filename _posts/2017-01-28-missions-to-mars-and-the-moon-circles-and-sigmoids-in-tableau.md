@@ -18,7 +18,8 @@ Last weekend, with some fellow Data Schoolers, I went to the exhibition "Maps a
 
 While waiting for people to come, I was leafing through the books in the Library's shop and came across a munificent infographic from the NASA about missions to space:
 
-[caption id="attachment\_1601" align="alignnone" width="3861"][![11049]({{ site.baseurl }}/assets/uploads/11049.webp)]({{ site.baseurl }}/assets/uploads/11049.webp) [Source: www.jpl.nasa.com]({{ site.baseurl }}/assets/uploads/11049.webp)[/caption]
+[![11049]({{ site.baseurl }}/assets/uploads/11049.webp)]({{ site.baseurl }}/assets/uploads/11049.webp)
+[Source: www.jpl.nasa.com]({{ site.baseurl }}/assets/uploads/11049.webp)
 
 I immediately asked myself if it would have been possible to mimic such great design in Tableau.
 
@@ -46,7 +47,7 @@ Crack on, then!
 
 The first approach that came to my mind was to start drawing the circles, and then join the end points of the circles using the same sigmoids we use to create charts like sankeys, or this viz by Jeffrey Shaffer.
 
-[({{ site.baseurl }}/assets/uploads/jeffrey-shaffer.webp)](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample) 
+[![Shaffer]({{ site.baseurl }}/assets/uploads/jeffrey-shaffer.webp)](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample) 
 [Click for interactive Tableau viz.](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample)
 
 > **But this won't work!**
