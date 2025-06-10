@@ -9,15 +9,10 @@ image: assets/uploads/never-stop-exploring.webp
 
 This week I spent my free time stretching and refreshing my (high school) knowledge of plotting exponential functions. Here below the end result: A visualization in Tableau of all the missions to Mars and the Moon so far, represented by curved lines and sorted by recency.
 
- 
-
-[caption id="attachment\_1584" align="aligncenter" width="999"][![never-stop-exploring]({{ site.baseurl }}/assets/uploads/never-stop-exploring.webp)](https://public.tableau.com/views/NeverStopExploringAllthemissionstoMarsandtheMoonsofar/NEVERSTOPEXPLORING-AllthemissionstoMarsandtheMoon?:embed=y&:display_count=yes) [Click to go to the interactive tableau viz.](https://public.tableau.com/views/NeverStopExploringAllthemissionstoMarsandtheMoonsofar/NEVERSTOPEXPLORING-AllthemissionstoMarsandtheMoon?:embed=y&:display_count=yes)[/caption]
-
- 
-
+[![never-stop-exploring]({{ site.baseurl }}/assets/uploads/never-stop-exploring.webp)](https://public.tableau.com/views/NeverStopExploringAllthemissionstoMarsandtheMoonsofar/NEVERSTOPEXPLORING-AllthemissionstoMarsandtheMoon?:embed=y&:display_count=yes)
+[Click to go to the interactive tableau viz.](https://public.tableau.com/views/NeverStopExploringAllthemissionstoMarsandtheMoonsofar/NEVERSTOPEXPLORING-AllthemissionstoMarsandtheMoon?:embed=y&:display_count=yes)
 
 **Where did the idea come from?**
-
 
 Last weekend, with some fellow Data Schoolers, I went to the exhibition "Maps and the twentieth century", at the British Library (It's brilliant,  by the way).
 
@@ -35,7 +30,8 @@ Since the very first moment I decided to commit myself to building such viz, I 
 
 A bit like Adam McCann did in this epic Game of Thrones viz:
 
-[caption id="attachment\_1623" align="aligncenter" width="330"][![got]({{ site.baseurl }}/assets/uploads/got.webp)](https://public.tableau.com/en-us/s/gallery/game-thrones-0) [Click for interactive Tableau viz.](https://public.tableau.com/en-us/s/gallery/game-thrones-0)[/caption]
+[![got]({{ site.baseurl }}/assets/uploads/got.webp)](https://public.tableau.com/en-us/s/gallery/game-thrones-0)
+[Click for interactive Tableau viz.](https://public.tableau.com/en-us/s/gallery/game-thrones-0)
 
 His curves are easier, though, as they are only two different portions of two circles with the same radius, one starting where the other ends.
 
@@ -49,9 +45,10 @@ Crack on, then!
 
 The first approach that came to my mind was to start drawing the circles, and then join the end points of the circles using the same sigmoids we use to create charts like sankeys, or this viz by Jeffrey Shaffer.
 
-[caption id="attachment\_1657" align="aligncenter" width="472"][![jeffrey-shaffer]({{ site.baseurl }}/assets/uploads/jeffrey-shaffer.webp)](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample) [Click for interactive Tableau viz.](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample)[/caption]
-**But this won't work!**
+({{ site.baseurl }}/assets/uploads/jeffrey-shaffer.webp)](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample) 
+[Click for interactive Tableau viz.](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample)
 
+> **But this won't work!**
 
 Indeed it didn't, and now I know, but it sounded reasonable at the time. Honestly, I didn't think enough about the math underlying the sigmoids. But let's get there later. The first thing I was off to were the circles.
 
@@ -71,7 +68,7 @@ Sigmoids have been around for a while now. As in the example above, they are us
 
 I started from the equation for a simple sigmoid (or 'logarithmic curve'):
 
-> Y=1/(1+EXP(1)^-[X])
+`Y=1/(1+EXP(1)^-[X])`
 
 
 Easy peasy:
@@ -80,20 +77,15 @@ Easy peasy:
 
 On Jeff's website, I also learned that the way to connect two points with a sigmoid is changing that function to:
 
-> Y = sigmoid * [Y Origin] + ([Y Destination]-[Y Origin])
-
+`Y = sigmoid * [Y Origin] + ([Y Destination]-[Y Origin])`
 
 Where "sigmoid" is the above-mentioned sigmoid function, and clearly the X of the sigmoid goes between [X Origin] and [X Destination].
 
 At that point, I thought I had all I needed to link the two semicircles I already built, and get the shape I wanted.
 
 ![2-two-opposite-75-circles-with-sigm]({{ site.baseurl }}/assets/uploads/2-two-opposite-75-circles-with-sigm1.webp)
-
  
 **Wrong, wrong, wrong!**
-
-
- 
 
 I wanted to go from -4,4 to 4,2, so I drew a column of numbers between -4 and 4 (that would have been my X coordinates), and applied the formula I just found to those.
 
@@ -121,11 +113,9 @@ If I couldn't (easily) have a sigmoid between -4,4 and 4,2, I would have drawn s
 
 Let's start from the first one. As we want our semicircle to get to -4,3.964028..., we can set the radius of the circle to be (3.964028.../2), multiplying both X and Y for this value, and then add +((3.964028...-2)/2), to adjust the position of the circle.
 
-For the second circle, multiplying for (2-D$263/2) both X and Y is enough to scale the circle to the right position. Here is the end result:
+For the second circle, multiplying for `(2-D$263/2)` both X and Y is enough to scale the circle to the right position. Here is the end result:
 
 ![sigmoid-and-semicircles-right]({{ site.baseurl }}/assets/uploads/sigmoid-and-semicircles-right.webp)
-
- 
 
 At this point, I created multiple columns in excel to assess the scalability of my model, setting the distance between each sigmoid to 0.5. to check my results and assess the scalability of this model
 
