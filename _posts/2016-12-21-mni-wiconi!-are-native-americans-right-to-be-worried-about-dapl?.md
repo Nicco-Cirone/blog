@@ -4,6 +4,7 @@ author: Nicco
 date: 2016-12-21 10:15:03
 layout: post
 categories: [ TO FIX ]
+hidden: true
 ---
 
 Mni Wiconi means "Water is life" in Lakota language, and it's a slogan Native Americans are using in their protests against DAPL: the Dakota Access Pipeline.
