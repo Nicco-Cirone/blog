@@ -33,7 +33,7 @@ Provoked by the article, and pleased by the result of FT's "search for a better 
 
 Here's the final result:
 
-[caption id="attachment\_722" align="aligncenter" width="996"][![snip]({{ site.baseurl }}/assets/uploads/snip.webp)](http://tabsoft.co/2fFai6L) [Click to go to the interactive dashboard](http://tabsoft.co/2fFai6L)[/caption]
+[![snip]({{ site.baseurl }}/assets/uploads/snip.webp)](http://tabsoft.co/2fFai6L) [Click to go to the interactive dashboard](http://tabsoft.co/2fFai6L)
 
 In order to get there, I built the following alteryx workflow:
 
