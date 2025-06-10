@@ -4,7 +4,6 @@ author: Nicco
 date: 2016-12-21 10:15:03
 layout: post
 categories: [ TO FIX ]
-hidden: true
 image: assets/uploads/What's in DAPL way.webp
 ---
 
