@@ -1,5 +1,6 @@
 ---
 title: "A life in black and white"
+author: Nicco
 date: 2017-06-22 11:11:52
 layout: post
 categories: [ Data Visualization, Tableau, Ironviz ]
