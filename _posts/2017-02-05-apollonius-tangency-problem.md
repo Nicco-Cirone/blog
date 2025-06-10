@@ -3,6 +3,7 @@ title: "Apollonius tangency problem"
 date: 2017-02-05 14:38:09
 layout: post
 categories: [ Data Visualization, Tableau ]
+hidden: true
 ---
 
 Since version 8, Tableau offers a native circle-packing algorithm to produce bubble charts.
