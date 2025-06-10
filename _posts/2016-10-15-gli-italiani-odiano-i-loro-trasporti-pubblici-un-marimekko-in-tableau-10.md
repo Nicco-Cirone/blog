@@ -1,5 +1,6 @@
 ---
 title: "Gli italiani odiano i loro trasporti pubblici: Un marimekko in Tableau 10"
+author: Nicco
 date: 2016-10-15 15:20:02
 layout: post
 categories: [ Data Visualization, Tableau, Italy ]
