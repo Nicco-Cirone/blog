@@ -31,6 +31,7 @@ Since the very first moment I decided to commit myself to building such viz, I 
 A bit like Adam McCann did in this epic Game of Thrones viz:
 
 [![got]({{ site.baseurl }}/assets/uploads/got.webp)](https://public.tableau.com/en-us/s/gallery/game-thrones-0)
+
 [Click for interactive Tableau viz.](https://public.tableau.com/en-us/s/gallery/game-thrones-0)
 
 His curves are easier, though, as they are only two different portions of two circles with the same radius, one starting where the other ends.
@@ -45,7 +46,7 @@ Crack on, then!
 
 The first approach that came to my mind was to start drawing the circles, and then join the end points of the circles using the same sigmoids we use to create charts like sankeys, or this viz by Jeffrey Shaffer.
 
-({{ site.baseurl }}/assets/uploads/jeffrey-shaffer.webp)](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample) 
+[({{ site.baseurl }}/assets/uploads/jeffrey-shaffer.webp)](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample) 
 [Click for interactive Tableau viz.](https://public.tableau.com/profile/jeffs8297#!/vizhome/StateofAmericaRankings2/DashboardExample)
 
 > **But this won't work!**
