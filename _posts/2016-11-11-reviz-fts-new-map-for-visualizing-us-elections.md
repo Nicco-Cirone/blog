@@ -2,6 +2,8 @@
 title: "#ReViz: FT's new map for visualizing US elections"
 date: 2016-11-11 14:08:09
 layout: post
+categories: [ Data Visualization, Tableau ]
+featured: true
 ---
 
 On Tuesday, the world wake up with a new POTUS, and the media were filled with data visualizations of the result. An electoral dataviz that never gets old is the "choropleth map", like the one below:
