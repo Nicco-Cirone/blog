@@ -7,7 +7,7 @@ author: Nicco
 image: assets/uploads/le-strade-piu-pericolose-di-roma.webp
 ---
 
-Segnaletica inesistente, intersezioni non regolate, luminosita' insufficiente, buche:cTra le molte cause degli incidenti stradali, alcune sono legate ad incuria, o mancanza di investimenti. D'altra parte, è inevitabile che una città di oltre 4 milioni di abitanti e 1,285 km2 di estensione, peraltro martoriata dai buchi di bilancio, affronti difficolta' nella gestione della spesa pubblica.
+Segnaletica inesistente, intersezioni non regolate, luminosita' insufficiente, buche: Tra le molte cause degli incidenti stradali, alcune sono legate ad incuria, o mancanza di investimenti. D'altra parte, è inevitabile che una città di oltre 4 milioni di abitanti e 1,285 km2 di estensione, peraltro martoriata dai buchi di bilancio, affronti difficolta' nella gestione della spesa pubblica.
 
 Perché non farsi aiutare dai dati, dunque, in un'ottica di *smart city*?
 
