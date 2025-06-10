@@ -3,6 +3,7 @@ title: "Missions to Mars and the Moon: circles and sigmoids in Tableau"
 date: 2017-01-28 22:33:52
 layout: post
 categories: [ Data Visualization, Tableau ]
+image: assets/uploads/never-stop-exploring.webp
 ---
 
 This week I spent my free time stretching and refreshing my (high school) knowledge of plotting exponential functions. Here below the end result: A visualization in Tableau of all the missions to Mars and the Moon so far, represented by curved lines and sorted by recency.
