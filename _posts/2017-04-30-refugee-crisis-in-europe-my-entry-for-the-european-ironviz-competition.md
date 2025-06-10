@@ -1,5 +1,6 @@
 ---
 title: "Refugee crisis in Europe - My entry for the European #IronViz competition"
+author: Nicco
 date: 2017-04-30 12:53:03
 layout: post
 categories: [ Data Visualization, Tableau ]
