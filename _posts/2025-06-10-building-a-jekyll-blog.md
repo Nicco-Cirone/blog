@@ -49,7 +49,7 @@ I tried everything:
 * Rewriting `index.html` with just a bullet list of post titles
 * Adding future: true in `_config.yml`
 * Changing layouts from default to home and back
-* Confirming that `{{ content }}` existed in default.html
+* Confirming that {% raw %}{{ content }}{% endraw %} existed in default.html
 
 Nothing worked — until I realized that category pages (like `/categories.html`) actually did show the posts. That meant the posts were fine, but the homepage loop wasn’t working.
 
