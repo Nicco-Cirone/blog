@@ -64,7 +64,8 @@ Both will probably start with some un-guided analytics to find interesting angle
 
 A Data Explorer will probably come up with something like this:
 
-[caption id="attachment\_1318" align="alignnone" width="1001"][![explo]({{ site.baseurl }}/assets/uploads/explo.webp)](https://public.tableau.com/views/AccidentsatworkintheEU2014/AccidentsatworkintheEU2014?:embed=y&:display_count=yes) [Click to go to the interactive dashboard](https://public.tableau.com/views/AccidentsatworkintheEU2014/AccidentsatworkintheEU2014?:embed=y&:display_count=yes)[/caption]
+[![explo]({{ site.baseurl }}/assets/uploads/explo.webp)](https://public.tableau.com/views/AccidentsatworkintheEU2014/AccidentsatworkintheEU2014?:embed=y&:display_count=yes)
+[Click to go to the interactive dashboard](https://public.tableau.com/views/AccidentsatworkintheEU2014/AccidentsatworkintheEU2014?:embed=y&:display_count=yes)
 
 Dashboards like the one above give visual clues to explore the underlying dataset, and because the charts are interrelated, it's easy to filter the view to the perspective we are more interested about.
 
