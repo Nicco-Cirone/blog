@@ -3,7 +3,7 @@ name: "Nicco Cirone Blog"
 title: "Nicco Cirone"
 description: "A travel journal of my adventures in data"
 logo: 'assets/images/pen_icon.webp'
-favicon: '/assets/images/pen_icon.webp'
+favicon: 'assets/images/pen_icon.webp'
 url: "https://niccocirone.com"
 baseurl: /blog
 # google_analytics: 'UA-46278016-1'
