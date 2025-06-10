@@ -2,6 +2,7 @@
 title: "Gli italiani odiano i loro trasporti pubblici: Un marimekko in Tableau 10"
 date: 2016-10-15 15:20:02
 layout: post
+categories: [ Data Visualization, Tableau, Italy ]
 ---
 
 Siccome questa settimana, per lavoro, mi e' servito imparare come si produce un Marimekko Chart in Tableau 10 (istruzioni in fondo), ho deciso di applicare subito quello che ho imparato a un dataset interessante sul livello di soddisfazione dei cittadini europei riguardo i loro mezzi pubblici.
