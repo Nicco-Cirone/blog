@@ -2,6 +2,7 @@
 title: "CAPM Financial Model in Tableau: Efficient frontier for a two assets portfolio"
 date: 2017-11-19 20:22:32
 layout: post
+categories: [ Data Visualization, Tableau ]
 ---
 
 This month I am working with financial data, so I thought it was a good idea to refresh my financial mathematics knowledge replicating some simple Capital Asset Pricing Modelling (CAPM) in Tableau. The CAPM is a set of mathematic rules used to price assets, based on the general idea that for an investment to be worth it, its risk must be rewarded by an appropriate rate of return. In this blog, I will show how to use Tableau to build the simplest CAPM model: the Efficient Frontier for a two-assets portfolio.
