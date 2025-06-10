@@ -1,5 +1,6 @@
 ---
 title: "Mni Wiconi! Are Native Americans right to be worried about DAPL?"
+author: Nicco
 date: 2016-12-21 10:15:03
 layout: post
 categories: [ TO FIX ]
