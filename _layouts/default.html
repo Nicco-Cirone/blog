@@ -6,7 +6,7 @@
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/pen_icon.webp">
 
-<title>{{ page.title }} | {{site.name}}</title>
+<title>{{ page.title }} | {{site.name}} Blog</title>
 
 {% seo %}
 
@@ -49,7 +49,7 @@ ga('send', 'pageview');
 
     <!-- Begin Logo -->
     <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }} Blog">
     </a>
     <!-- End Logo -->
 
@@ -68,7 +68,7 @@ ga('send', 'pageview');
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                <a class="nav-link" href="{{ site.baseurl }}/">Blog</a>
                 </li>
 
                 <li class="nav-item">
@@ -99,7 +99,7 @@ ga('send', 'pageview');
 <!-- Site Title
 ================================================== -->
 <div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
+    <h1 class="sitetitle" href="{{ site.baseurl }}/>{{ site.name }}</h1>
     <p class="lead">
         {{ site.description }}
     </p>
