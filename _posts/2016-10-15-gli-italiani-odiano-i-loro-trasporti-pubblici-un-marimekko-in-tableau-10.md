@@ -17,9 +17,8 @@ Nel grafico qui sotto la larghezza delle barre e' proporzionale alla popolazione
 
 Indovinate a quale paese appartengono le barre piu' gialle?
 
-[caption id="attachment\_327" align="alignnone" width="1001"][![marimekko-dashboard]({{ site.baseurl }}/assets/uploads/marimekko-dashboard2.webp)](https://public.tableau.com/views/MakeoverMondayGoodJobItaly_0/MMMarimekko?:embed=y&:display_count=yes) Clicca per esplorare la dashboard[/caption]
-
- 
+[![marimekko-dashboard]({{ site.baseurl }}/assets/uploads/marimekko-dashboard2.webp)](https://public.tableau.com/views/MakeoverMondayGoodJobItaly_0/MMMarimekko?:embed=y&:display_count=yes) 
+[Clicca per esplorare la dashboard](https://public.tableau.com/app/profile/nicco.cirone/viz/MakeoverMondayGoodJobItaly_0/MMMarimekko)
 
 Non e' cosi' difficile da indovinare, e la risposta si puo' trovare facilmente evidenziando le barre italiane:
 
@@ -63,12 +62,12 @@ Qui sotto i calcoli che ho usato:
 
 **Tot Measure per Width Dimension:**
 
-IF first()==0 THEN
+`IF first()==0 THEN
 min({fixed [City] : avg([Population (2014 or 2013)])})
 ELSEIF min([City])!=lookup(min([City]),1) THEN
 PREVIOUS\_VALUE(0)+min({fixed [City] : avg([Population (2014 or 2013)])})
 ELSE min({fixed [City] : avg([Population (2014 or 2013)])})
-END
+END`
 
 **Population per City:**{exclude [Rating] : avg([Population (2014 or 2013)])}
 
