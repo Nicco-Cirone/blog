@@ -43,7 +43,7 @@ What I really needed, was a combination of circles and sigmoids - with the end 
 
 It is a bit of geometry, but definitely not rocket science. Below, I will illustrate all the steps I took in excel to build the curves (I won't get too mathematical - what do I know! - and I won't demonstrate the formulas. But you can do your research. They should be right.). If you like, you can follow the steps along and replicate the process yourself. The excel file with all the following calculations can be downloaded from [here](https://dl.dropboxusercontent.com/u/26083752/Missions%20to%20Mars%20prod.xlsx).
 
-Crack on, then!
+> Crack on, then!
 
 The first approach that came to my mind was to start drawing the circles, and then join the end points of the circles using the same sigmoids we use to create charts like sankeys, or this viz by Jeffrey Shaffer.
 
