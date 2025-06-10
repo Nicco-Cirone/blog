@@ -4,7 +4,7 @@ date: 2025-06-10
 layout: post
 author: Nicco
 categories: [ Coding, Web Development ]
-image: assets/uploads/screenshot.webp
+image: assets/uploads/blog_home.webp
 ---
 
 In June 2025, I set out to migrate my old blog from WordPress.com to a fast, clean, static site built with Jekyll and hosted on GitHub Pages. My goal: have full control over my content, simplify hosting, and use a custom domain like blog.niccocirone.com.
