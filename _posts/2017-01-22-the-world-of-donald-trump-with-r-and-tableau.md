@@ -11,9 +11,8 @@ Last week, Buzzfeed released the output of a research they have carried on [all 
 
 I decided I wanted to visualize this dataset on a network chart, showing both the direct and indirect business connections of Trump. See below the end result (click for the interactive version).
 
-[caption id="attachment\_1430" align="alignnone" width="997"][![trump-world]({{ site.baseurl }}/assets/uploads/trump-world.webp)](https://public.tableau.com/views/TrumpWorld/Dashboard1?:embed=y&:display_count=yes) [Trump's world: A network of Trump's connections](https://public.tableau.com/views/TrumpWorld/Dashboard1?:embed=y&:display_count=yes)[/caption]
-
-
+[![trump-world]({{ site.baseurl }}/assets/uploads/trump-world.webp)](https://public.tableau.com/views/TrumpWorld/Dashboard1?:embed=y&:display_count=yes)
+[Trump's world: A network of Trump's connections](https://public.tableau.com/views/TrumpWorld/Dashboard1?:embed=y&:display_count=yes)
 
 In order to plot the chart, we need a model that assign sensible coordinates to each of the points, and unfortunately this is not natively available in Tableau.
 
@@ -42,37 +41,24 @@ Now, let's see how to replicate each of those steps:
 In R studio:
 1. Import the dataset. You can use Tools>Import dataset, or just write in your console:
 
-> > Trump.dataset <- read.csv("[Your file path]/Trump dataset.csv")> View(Trump.dataset)
-
+<code>Trump.dataset <- read.csv("[Your file path]/Trump dataset.csv")> View(Trump.dataset)</code>
 
 2. Install "igraph" package. You can use Tools>Install packages, or just write:
 
-> > install.packages("igraph")
-
+<code>install.packages("igraph")</code>
 
 3. Declare the package, and build the model. Write in your console:
 
-> > install.packages("igraph")
-> 
-> > library(igraph)
-
-
-
-> > g <- graph.data.frame(Trump.dataset, directed=TRUE)
-
-
-
-> > plot(g, layout=layout.fruchterman.reingold)#fruchterman.reingold(g)*0.2)#, layout=l*1.0)
-
+<code>install.packages("igraph")
+library(igraph)
+g <- graph.data.frame(Trump.dataset, directed=TRUE)
+plot(g, layout=layout.fruchterman.reingold)#fruchterman.reingold(g)*0.2)#, layout=l*1.0)</code>
 
 4. Export your results as a new csv file. Write:
 
-> > write.csv(data.frame(layout.fruchterman.reingold(g),vertex\_attr(g)),file = "[Your file path]/Trump network in R.csv")
+<code>write.csv(data.frame(layout.fruchterman.reingold(g),vertex\_attr(g)),file = "[Your file path]/Trump network in R.csv")</code>
 
-
-
-
-Note that "fruchterman.reingold" is the model I chose for the network chart, but you can pick any of the available (see [here](http://igraph.org/c/doc/igraph-Layout.html)), and get different results. Equally, you can change the other parameters.
+Note that `"fruchterman.reingold"` is the model I chose for the network chart, but you can pick any of the available (see [here](http://igraph.org/c/doc/igraph-Layout.html)), and get different results. Equally, you can change the other parameters.
 
 Now you have a csv with the coordinates and names of each point of the network chart. Something like this:
 
@@ -82,7 +68,7 @@ We are close now. In order to get the desired result in Tableau, we need to go b
 1. We need to create a new excel spreadsheet where we copy the first csv file, the one we inputted in R, adding two columns, both called "path", one with "1" for every record, and one with "2".
 2. We also need a new column called "Link", where we combine "A" and "B", with a formula like:
 
-> Link =A2&" <-> "&B2
+`Link =A2&" <-> "&B2`
 
 
 3. We then pivot the "A" and "B" columns to a single column called "name". I would just copy all the columns except from "A" and the "path" with "2", then paste them after the last record of data (making sure column match - like "A" match with "B", etc.). I would then delete the "B" column and the "path" column with 2 from the first half of the data, shifting cells left.
@@ -97,15 +83,11 @@ Now the last bit is to setup a lookup that assign for each "Name" the coordinate
 2. Switch the order of the columns so to have "Name" | "X1" | "X2"
 3. In the main sheet, create two new columns, "X" and "Y", and setup a lookup formula for each that gets the coordinates from the other sheet. Like the following:
 
-> X =VLOOKUP('Trump dataset'!A2,'Trump network in R 2 - Copy'!$A$2:$C$1515,2,0)
-
-
-
-> Y =VLOOKUP('Trump dataset'!A2,'Trump network in R 2 - Copy'!$A$2:$C$1515,3,0)
+`X =VLOOKUP('Trump dataset'!A2,'Trump network in R 2 - Copy'!$A$2:$C$1515,2,0)`
+`Y =VLOOKUP('Trump dataset'!A2,'Trump network in R 2 - Copy'!$A$2:$C$1515,3,0)`
 
 
 4. The result should look like this:![Final dataset.PNG]({{ site.baseurl }}/assets/uploads/final-dataset.webp)
-
 
 Now we have our dataset ready for Tableau!
 
