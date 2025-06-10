@@ -1,4 +1,4 @@
-https://public.tableau.com/shared/S948S7HB4?:display_count=yes---
+---
 title: "Le strade piu' pericolose di Roma: La mappa e i dati."
 date: 2016-10-01 13:39:38
 layout: post
