@@ -13,19 +13,14 @@ Eppure, a valle del "Day of the Older Persons" (1-Oct), o della nostrana  #fest
 
 La dashboard interattiva seguente permette di scomporre l'indice di soddisfazione paese per paese; e il quadro che emerge e' - ancora una volta - una netta frattura del continente, tra Nord-Ovest e Sud-Est.
 
- 
-
-[caption id="attachment\_235" align="alignnone" width="1193"][![db]({{ site.baseurl }}/assets/uploads/db.webp)](https://public.tableau.com/profile/nicco.cirone#!/vizhome/SatisfactionofelderlyEuropeansaged75yearsorolder2013/SatisfactionofelderlyEuropeansaged75yearsorolder) Clicca per esplorare i dati con la dashboard.[/caption]
+[![db]({{ site.baseurl }}/assets/uploads/db.webp)](https://public.tableau.com/profile/nicco.cirone#!/vizhome/SatisfactionofelderlyEuropeansaged75yearsorolder2013/SatisfactionofelderlyEuropeansaged75yearsorolder)
+[Clicca per esplorare i dati con la dashboard](https://public.tableau.com/app/profile/nicco.cirone/viz/SatisfactionofelderlyEuropeansaged75yearsorolder2013/SatisfactionofelderlyEuropeansaged75yearsorolder)
 
 E l'Italia?
-
-
 
 L'Italia rientra appieno nel quadrante Sud-Est, sia geograficamente, sia in base ai valori degli indicatori.
 
 ![pic]({{ site.baseurl }}/assets/uploads/pic.webp)
-
- 
 
 Un indicatore addirittura, "Living Environment", non raggiunge neanche la sufficienza.
 
