@@ -2,9 +2,11 @@
 title: "A life in black and white"
 date: 2017-06-22 11:11:52
 layout: post
+categories: [ Data Visualization, Tableau, Ironviz ]
+featured: true
 ---
 
-eah, it's that time of the year again, when Tableau hosts another round of the #IronViz competition. This time the topic is "Safari": Animals & Plants.
+It's that time of the year again, when Tableau hosts another round of the #IronViz competition. This time the topic is "Safari": Animals & Plants.
 
 After playing around with a couple of datasets like the IUCN list of threatened species, and the London Fire Brigade animal rescue records, I decided to have a close look to some of the most interesting animals in the world: Penguins!
 
