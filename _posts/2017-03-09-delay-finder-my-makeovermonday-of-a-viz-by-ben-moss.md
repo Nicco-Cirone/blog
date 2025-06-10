@@ -3,6 +3,7 @@ title: "Delay Finder: my very own #MakeoverMonday of a viz by Ben Moss"
 date: 2017-03-09 11:25:09
 layout: post
 categories: [ Data Visualization, Tableau ]
+image: assets/uploads/delay-finder-makeover.webp
 ---
 
 I really appreciate the power of constructive criticism in the #DataViz space. Given the importance of the audience in the data visualization process, feedback from peers is a gift to ask for and to encourage.
