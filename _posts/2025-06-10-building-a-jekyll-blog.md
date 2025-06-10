@@ -27,7 +27,7 @@ I created a repo (/blog) with an empty README.md, installed Jekyll via bundle, a
 WordPress lets you export your entire blog as an XML file. I downloaded mine and used jekyll-import to convert it into Markdown files in the _posts/ folder.
 This mostly worked, but images didn’t display — they referenced WordPress-hosted paths. So the next step was to write a script to download every image from the export and place them in assets/uploads/, then updated the Markdown files to use:
 
-![Alt text]({{ site.baseurl }}/assets/uploads/image.webp)
+'![Alt text]({{ site.baseurl }}/assets/uploads/image.webp)'
 
 I also decided to convert every image to WebP for performance and consistency. Using a shell script and the cwebp tool, I batch-converted ~140 images and removed the originals.
 
@@ -35,8 +35,8 @@ I also decided to convert every image to WebP for performance and consistency. U
 I wanted a nicer layout than the default. After evaluating a few, I chose Mediumish — clean, readable, and popular among technical writers.
 I copied the theme into my repo and adjusted _config.yml to include:
 
-remote_theme: "wowthemesnet/mediumish-theme-jekyll"
-baseurl: "/blog"
+'remote_theme: "wowthemesnet/mediumish-theme-jekyll"
+baseurl: "/blog"'
 
 Then everything broke.
 
@@ -49,7 +49,7 @@ I tried everything:
 * Rewriting index.html with just a bullet list of post titles
 * Adding future: true in _config.yml
 * Changing layouts from default to home and back
-* Confirming that {{ content }} existed in default.html
+* Confirming that '{{ content }}' existed in default.html
 
 Nothing worked — until I realized that category pages (like /categories.html) actually did show the posts. That meant the posts were fine, but the homepage loop wasn’t working.
 
