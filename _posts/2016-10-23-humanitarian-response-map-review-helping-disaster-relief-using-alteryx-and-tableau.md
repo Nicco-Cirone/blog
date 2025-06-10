@@ -14,9 +14,8 @@ And this has really been the case. Since then, I have been involved in a proje
 
 The output of the project is the dashboard below: basically a visual way for decision makers on emergency fields to quickly filter the multitude of maps created by various organizations and find the ones that suit their needs.
 
-[caption id="attachment\_517" align="alignnone" width="1010"][![Screenshot.PNG]({{ site.baseurl }}/assets/uploads/screenshot.webp)](http://digitalhumanitarians.com/resource/map-filter-haiti) [Click to go to the project's site](http://digitalhumanitarians.com/resource/map-filter-haiti)[/caption]
-
-
+[![Screenshot.PNG]({{ site.baseurl }}/assets/uploads/screenshot.webp)](http://digitalhumanitarians.com/resource/map-filter-haiti) 
+[Click to go to the project's site](http://digitalhumanitarians.com/resource/map-filter-haiti)
 
 The project started in April 2016, by creating a prototype using data from TC Winston, a typhoon in Fiji Islands.When the developing process was almost finished, a violent earthquake shook Ecuador, pushing us to stop iterating and [implement it](http://digitalhumanitarians.com/resource/map-filter-ecuador).
 
