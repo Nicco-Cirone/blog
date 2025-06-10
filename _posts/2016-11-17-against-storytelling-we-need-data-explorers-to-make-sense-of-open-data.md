@@ -3,6 +3,8 @@ title: "Against storytelling: We need Data Explorers to make sense of Open Data.
 date: 2016-11-17 15:59:04
 layout: post
 categories: [ Data Visualization, Tableau, Thoughts ]
+author: Nicco
+image: assets/uploads/toy-explorer-256x256.webp
 ---
 
 Yeah, the title is provocative.
