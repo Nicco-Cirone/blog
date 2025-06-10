@@ -1,4 +1,4 @@
----
+https://public.tableau.com/shared/S948S7HB4?:display_count=yes---
 title: "Le strade piu' pericolose di Roma: La mappa e i dati."
 date: 2016-10-01 13:39:38
 layout: post
@@ -13,8 +13,8 @@ Perché non farsi aiutare dai dati, dunque, in un'ottica di *smart city*?
 
 [Il sito di open data del Comune di Roma](http://dati.comune.roma.it/) mette a disposizione i dati granulari su tutti gli incidenti stradali, trimestre per trimestre. Usando Tableau, una simile banca dati permette di costruire strumenti come il seguente, che possano aiutare i *decision makers* a capire quali quadranti del proprio territorio abbiano maggior bisogno di interventi, e di che tipo.
 
-[![le-strade-piu-pericolose-di-roma]({{ site.baseurl }}/assets/uploads/le-strade-piu-pericolose-di-roma.webp)](https://public.tableau.com/shared/S948S7HB4?:display_count=yes) 
-<p style="text-align: center;">[Clicca per andare alla dashboard interattiva](https://public.tableau.com/shared/S948S7HB4?:display_count=yes)</p>
+![le-strade-piu-pericolose-di-roma]({{ site.baseurl }}/assets/uploads/le-strade-piu-pericolose-di-roma.webp) 
+<p style="text-align: center;"><a href="https://public.tableau.com/shared/S948S7HB4?:display_count=yes" target="_blank" rel="noopener noreferrer">Clicca per andare alla dashboard interattiva</a></p>
 
 La mappa riporta tutti gli incidenti stradali registrati a Roma nel 2015, ed e' colorata in base alle specifiche del contesto, evidenziando le situazioni problematiche. In questo modo e' possibile individuare, municipio per municipio, le aree che maggiormente necessitano di segnaletica, illuminazione, o interventi di assestamento.
 
