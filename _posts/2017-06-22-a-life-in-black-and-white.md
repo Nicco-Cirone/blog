@@ -8,9 +8,7 @@ featured: true
 image: assets/uploads/penguins.webp
 ---
 
-It's that time of the year again, when Tableau hosts another round of the #IronViz competition. This time the topic is "Safari": Animals & Plants.
-
-After playing around with a couple of datasets like the IUCN list of threatened species, and the London Fire Brigade animal rescue records, I decided to have a close look to some of the most interesting animals in the world: Penguins!
+It's that time of the year again, when Tableau hosts another round of the #IronViz competition. This time the topic is "Safari": Animals & Plants. After playing around with a couple of datasets like the IUCN list of threatened species, and the London Fire Brigade animal rescue records, I decided to have a close look to some of the most interesting animals in the world: Penguins!
 
 Here below is my final submission, built around a map of the Antarctic Penguins colonies which uses a polar projection in Tableau. If you want to know I achieved it, with a mix of alteryx and mapbox magic, this post is for you.
 
