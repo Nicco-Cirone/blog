@@ -14,9 +14,8 @@ After playing around with a couple of datasets like the IUCN list of threatened 
 
 Here below is my final submission, built around a map of the Antarctic Penguins colonies which uses a polar projection in Tableau. If you want to know I achieved it, with a mix of alteryx and mapbox magic, this post is for you.
 
-[caption id="attachment\_2165" align="alignnone" width="1505"][![A life in black and white]({{ site.baseurl }}/assets/uploads/a-life-in-black-and-white.webp)](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite) [Click to go to the interactive dashboard](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)[/caption]
-
-
+[![A life in black and white]({{ site.baseurl }}/assets/uploads/a-life-in-black-and-white.webp)](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)
+[Click to go to the interactive dashboard](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)
 
 First of all, I have to thank Dr Grant Humphries and Dr. Heather J. Lynch to gave me green light to the use of their brilliant data. Their project, MAPPPD, is a relentless effort in collecting data on penguins to constantly monitor the health of the Antarctic and - ultimately- of our planet; find more info [here.](http://www.penguinmap.com/mapppd)
 
@@ -32,15 +31,11 @@ The point here is (as you already know because you read Sarah's blog), Tableau c
 
 Sarah's method works using polar projected coordinates, which basically measure the distance from (0,0), on the South Pole. I had latitude and longitude in the data though, so the first thing to do is reprojecting the data into polar coordinates.
 
- 
-
-[caption id="attachment\_2166" align="aligncenter" width="519"]![The sites are nicely unwrapped in a Lat/Lon projection]({{ site.baseurl }}/assets/uploads/capture1.webp) The sites are nicely unwrapped on a Lat/Lon projection[/caption]
+![The sites are nicely unwrapped in a Lat/Lon projection]({{ site.baseurl }}/assets/uploads/capture1.webp) The sites are nicely unwrapped on a Lat/Lon projection
 
 So first I create centroids out of the Lat/Lon fields, and then I can go ahead and use the "Spatial Info" tool to transpose the centroids on polar coordinates.
 
- 
-
-[caption id="attachment\_2167" align="aligncenter" width="519"]![Capture2.PNG]({{ site.baseurl }}/assets/uploads/capture2.webp) Using "centroid" spatial objects we transform Lat/Lon in polar coords.[/caption]
+![Capture2.PNG]({{ site.baseurl }}/assets/uploads/capture2.webp) Using "centroid" spatial objects we transform Lat/Lon in polar coords.
 
 Nice.
 
@@ -54,25 +49,15 @@ To do this, we need a Pseudo-Mercator projection. So we lie to alteryx, and we t
 
  
 
-[caption id="attachment\_2168" align="aligncenter" width="535"]![Capture3.PNG]({{ site.baseurl }}/assets/uploads/capture3.webp) We create new points in a Pseudo Mercator projection[/caption]
+({{ site.baseurl }}/assets/uploads/capture3.webp) We create new points in a Pseudo Mercator projection
 
 And this is the result:
 
- 
-
-[caption id="attachment\_2169" align="aligncenter" width="521"]![Capture4.PNG]({{ site.baseurl }}/assets/uploads/capture4.webp) Antarctica is now in Africa. Sweet.[/caption]
+({{ site.baseurl }}/assets/uploads/capture4.webp) Antarctica is now in Africa. Sweet.
 
 Doing this, we move Antarctica in Africa.
 
 Pseudo-Mercator works because shifts the center (0,0) from the South Pole to our usual zero-zero point: The fascinating land of [Null Island](http://www.nullisland.com/)!
-
- 
-
- 
-
- 
-
- 
 
 Fantastic, so what we need now is only to export those new spatial points in WGS84 Lat/Lon and we are good to go in Tableau.
 
@@ -82,10 +67,6 @@ So the next task will be to replace the classic tableau map, with a custom built
 
 We can just repeat the same process above with a shapefile of continents,,, and then upload it on a custom map on mapbox. Here below the final result:
 
- 
-
-[caption id="attachment\_media-17" align="alignnone" width="1500"]![Capture5.PNG]({{ site.baseurl }}/assets/uploads/capture5.webp) Funky![/caption]
-
- 
+![Capture5.PNG]({{ site.baseurl }}/assets/uploads/capture5.webp) Funky!
 
 Have fun with your polar data!
