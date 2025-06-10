@@ -3,6 +3,7 @@ title: "Refugee crisis in Europe - My entry for the European #IronViz competitio
 date: 2017-04-30 12:53:03
 layout: post
 categories: [ Data Visualization, Tableau ]
+image: assets/uploads/refugee-crisis-in-europe.webp
 ---
 
 Since 2010, the unstable situation in the middle east generated a massive inflow of migrants in all European countries. Through different routes, people illegally cross borders until they ask asylum and apply for refugee status in a chosen country. However, too many people don't make the final destination, as they disappear - or die - in the mediterranean sea, or on their way to a better life.
