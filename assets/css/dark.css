@@ -66,6 +66,16 @@ span.post-read-more a {
     color: #fff;
   }
 
+span.post-name a,
+  span.post-read-more a {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  span.post-name a:hover,
+  span.post-read-more a:hover {
+    color: #fff;
+  }
+
 /* Headings and tagline */
 h1, h2, h3, h4, h5, h6,
 .mainheading h1.sitetitle,
