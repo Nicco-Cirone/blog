@@ -154,23 +154,24 @@ textarea {
 
 /* Share icons in posts */
 
-{
-  .share,
-  .share a {
-    color: rgba(255, 255, 255, 0.5);
-    fill: rgba(255, 255, 255, 0.5);
-  }
+/* Share icons in posts */
 
-  .share a:hover {
-    color: #fff;
-    fill: #fff;
-  }
-
-  .share ul li i.fa {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-  .sep {
-    background: rgba(255, 255, 255, 0.2);
-  }
+.share,
+.share a {
+  color: #66d9ef;
+  fill: #66d9ef;
 }
+
+.share a:hover {
+  color: #8be9fd;
+  fill: #8be9fd;
+}
+
+.share ul li i.fa {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sep {
+  background: rgba(255, 255, 255, 0.2);
+}
+
