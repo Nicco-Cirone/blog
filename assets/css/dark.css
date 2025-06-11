@@ -1,9 +1,19 @@
 /* Dark mode overrides for Mediumish theme */
 
 body,
-.media-section {
+.media-section,
+.article-post,
+.post-top-meta,
+.footer {
   background-color: #111;
   color: #f0f0f0;
+}
+
+/* Ensure headings are visible */
+h1, h2, h3, h4, h5, h6,
+.article-post h1, .article-post h2, .article-post h3,
+.article-post h4, .article-post h5, .article-post h6 {
+  color: #fff;
 }
 
 /* Links */
@@ -17,7 +27,9 @@ a:hover {
 
 /* Cards or content boxes */
 .card,
-.media-section .card {
+.media-section .card,
+.listfeaturedtag,
+.listrelated .card {
   background-color: #1a1a1a;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -32,7 +44,19 @@ a:hover {
   color: #ccc;
 }
 
-/* Images (optional, reduce glare) */
-.media-section img {
+/* Author meta and footers */
+.post-top-meta span,
+.author-meta,
+.footer,
+span.post-date,
+span.post-read,
+.share,
+.share a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Images: dim slightly in dark mode */
+.media-section img,
+.article-post img {
   filter: brightness(0.9);
 }
