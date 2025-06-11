@@ -124,9 +124,9 @@ h1, h2, h3, h4, h5, h6,
   color: #eee !important;
 }
 
-  .nav-link:hover {
-    color: #8be9fd; /* match global hover */
-  }
+.mediumnavigation .nav-link:hover {
+  color: #8be9fd !important;
+}
 
 .mediumnavigation .form-control {
   background-color: #1f1f1f;
