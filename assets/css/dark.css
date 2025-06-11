@@ -51,6 +51,21 @@ span.post-read-more a {
   background-color: #1a1a1a;
 }
 
+  .card-footer {
+    background-color: #1a1a1a;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .card-footer .wrapfooter,
+  .card-footer span,
+  .card-footer a {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .card-footer a:hover {
+    color: #fff;
+  }
+
 /* Headings and tagline */
 h1, h2, h3, h4, h5, h6,
 .mainheading h1.sitetitle,
