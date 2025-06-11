@@ -3,6 +3,10 @@ Theme: Mediumish Dark Mode Extension
 Author: WowThemes.net + Custom Dark Mode
 */
 
+body {
+  background: #111 !important;
+}
+
 /* Base media section styles */
 .media-section {
     background-color: #fff;
