@@ -21,33 +21,47 @@ a:hover {
   color: #f0f0f0;
 }
 
+/* Card text */
 .card-title,
 .listfeaturedtag h2.card-title,
-.listrecent h2.card-title {
+.listrecent h2.card-title,
+.card-text,
+.listfeaturedtag h4.card-text,
+.listrecent h4.card-text,
+.card-block,
+.post-preview,
+.article-post {
+  color: #f0f0f0;
+}
+
+/* Card footer (author and date) */
+.wrapfooter,
+span.post-date,
+span.author-meta,
+.author-meta,
+.post-top-meta span,
+span.post-read,
+span.post-read-more a {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #1a1a1a;
+}
+
+/* Headings and tagline */
+h1, h2, h3, h4, h5, h6,
+.mainheading h1.sitetitle,
+.mainheading h1.posttitle,
+.mainheading p {
   color: #fff;
 }
 
-.card-text,
-.listfeaturedtag h4.card-text,
-.listrecent h4.card-text {
-  color: #ccc;
-}
-
-/* Card footer (author name block) */
-.wrapfooter {
-  background-color: #1a1a1a;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* Featured section title */
+/* Section headings */
 .section-title h2,
 .section-title span {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Navbar (optional: dark background & white text) */
+/* Navbar */
 .mediumnavigation {
   background: rgba(0, 0, 0, 0.85);
   box-shadow: 0 2px 2px -2px rgba(255, 255, 255, 0.1);
@@ -73,22 +87,18 @@ a:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Author block text */
-.author-meta,
-.post-top-meta span,
-span.post-date,
-span.post-read,
-span.post-read-more a {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #fff;
-}
-
-/* Images: slightly dimmed */
+/* Image brightness */
 .card img,
-.article-post img {
+.article-post img,
+.thumbnail img,
+.featured-box-img-cover {
   filter: brightness(0.9);
+}
+
+/* Fix input text color if you use forms */
+input,
+textarea {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
