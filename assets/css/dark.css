@@ -137,6 +137,28 @@ h1, h2, h3, h4, h5, h6,
   color: rgba(255, 255, 255, 0.4);
 }
 
+/* Jumbotron */
+
+.jumbotron.fortags {
+    background-image: url('../images/jumbotron_dark.webp') !important;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .jumbotron.fortags .col-md-4 {
+    background: rgba(0, 0, 0, 0.75); /* optional: improve text legibility */
+  }
+
+  .jumbotron.fortags a {
+    background: #222;
+    color: #8be9fd;
+  }
+
+  .jumbotron.fortags a:hover {
+    background: #444;
+    color: #fff;
+  }
+
 /* Footer */
 .footer {
   background-color: #111;
