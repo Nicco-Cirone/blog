@@ -1,62 +1,94 @@
-/* Dark mode overrides for Mediumish theme */
-
-body,
-.media-section,
-.article-post,
-.post-top-meta,
-.footer {
+/* Base background and text */
+body {
   background-color: #111;
   color: #f0f0f0;
-}
-
-/* Ensure headings are visible */
-h1, h2, h3, h4, h5, h6,
-.article-post h1, .article-post h2, .article-post h3,
-.article-post h4, .article-post h5, .article-post h6 {
-  color: #fff;
 }
 
 /* Links */
 a {
   color: #66d9ef;
 }
-
 a:hover {
   color: #8be9fd;
 }
 
-/* Cards or content boxes */
+/* Cards */
 .card,
-.media-section .card,
-.listfeaturedtag,
+.listfeaturedtag .card,
 .listrelated .card {
   background-color: #1a1a1a;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f0f0f0;
 }
 
-/* Headings inside cards */
-.card-title {
-  color: #f9f9f9;
+.card-title,
+.listfeaturedtag h2.card-title,
+.listrecent h2.card-title {
+  color: #fff;
 }
 
-/* Text inside cards */
-.card-text {
+.card-text,
+.listfeaturedtag h4.card-text,
+.listrecent h4.card-text {
   color: #ccc;
 }
 
-/* Author meta and footers */
-.post-top-meta span,
-.author-meta,
-.footer,
-span.post-date,
-span.post-read,
-.share,
-.share a {
-  color: rgba(255, 255, 255, 0.5);
+/* Card footer (author name block) */
+.wrapfooter {
+  background-color: #1a1a1a;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
 }
 
-/* Images: dim slightly in dark mode */
-.media-section img,
+/* Featured section title */
+.section-title h2,
+.section-title span {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar (optional: dark background & white text) */
+.mediumnavigation {
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 2px 2px -2px rgba(255, 255, 255, 0.1);
+}
+.mediumnavigation a,
+.mediumnavigation .navbar-brand,
+.mediumnavigation .nav-item {
+  color: #eee;
+}
+.mediumnavigation .form-control {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.mediumnavigation .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Author block text */
+.author-meta,
+.post-top-meta span,
+span.post-date,
+span.post-read,
+span.post-read-more a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+/* Images: slightly dimmed */
+.card img,
 .article-post img {
   filter: brightness(0.9);
 }
