@@ -34,6 +34,11 @@ a:hover {
   color: #f0f0f0;
 }
 
+.card-title a,
+  .card-title-link {
+    color: #fff;
+  }
+
 /* Card footer (author and date) */
 .wrapfooter,
 span.post-date,
