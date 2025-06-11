@@ -44,6 +44,15 @@ a:hover {
     color: #fff;
   }
 
+.author-name {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+.author-name:hover {
+  color: #fff;
+}
+
 /* Card footer (author and date) */
 .wrapfooter,
 span.post-date,
