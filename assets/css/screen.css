@@ -152,6 +152,15 @@ section.recent-posts {
     line-height: 1.25;
 }
 
+.author-name {
+  color: #000;
+  text-decoration: none;
+}
+
+.author-name:hover {
+  color: #038252;
+}
+
 .card-title a,
 .card-title-link {
   color: #000;
