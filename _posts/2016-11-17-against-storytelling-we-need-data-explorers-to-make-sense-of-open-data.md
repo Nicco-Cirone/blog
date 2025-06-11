@@ -19,10 +19,6 @@ As we strive for a more transparent, informed and data-driven society, I genuine
 
 In fact, because they don't aim to change opinions, they empower people with visual instruments to check what's going on themselves. Thanks to Data Explorers, people can make sense out of data when they are complex and - yes - big.
 
-<div style="text-align: center;">
-  <img src="{{ site.baseurl }}/assets/uploads/data_explorer.webp" alt="Data Explorer" />
-</div>
-
 **#1 Open data and the open source paradigm**
 
 Governments and Institutions opening their data to the public represent a promising trend for transparency and overall advancement of our society. The ability of the public to access, download, copy, and analyse datasources, provides great foundations for startups to build amazing products, or for data journalists to dig stories out of numbers. In this interpretation, the Open Data trend is a powerful expression of the wider open source paradigm.
