@@ -126,6 +126,11 @@ section.recent-posts {
     border: 0;
 }
 
+.card-footer {
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .listfeaturedtag .thumbnail {
     background-size: cover;
     height: 100%;
