@@ -151,3 +151,26 @@ textarea {
   color: #f0f0f0;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Share icons in posts */
+
+{
+  .share,
+  .share a {
+    color: rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.5);
+  }
+
+  .share a:hover {
+    color: #fff;
+    fill: #fff;
+  }
+
+  .share ul li i.fa {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .sep {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
