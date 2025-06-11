@@ -5,7 +5,7 @@ date: 2016-11-17 15:59:04
 layout: post
 categories: [ Data Visualization, Tableau, Thoughts ]
 author: Nicco
-image: assets/uploads/toy-explorer-256x256.webp
+image: assets/uploads/data_explorer.webp
 ---
 
 Yeah, the title is provocative.
@@ -19,7 +19,9 @@ As we strive for a more transparent, informed and data-driven society, I genuine
 
 In fact, because they don't aim to change opinions, they empower people with visual instruments to check what's going on themselves. Thanks to Data Explorers, people can make sense out of data when they are complex and - yes - big.
 
-![Toy Explorer-256x256.png]({{ site.baseurl }}/assets/uploads/toy-explorer-256x256.webp)
+<div style="text-align: center;">
+  <img src="{{ site.baseurl }}/assets/uploads/data_explorer.webp" alt="Data Explorer" />
+</div>
 
 **#1 Open data and the open source paradigm**
 
