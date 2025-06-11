@@ -1,20 +1,36 @@
-/* Base background and text */
+/* ========================
+   Nicco Cirone Blog - Dark Theme (Final)
+   ======================== */
+
+/* Base layout */
 body {
   background-color: #111;
   color: #f0f0f0;
 }
 
 /* Links */
-
 a {
   color: #66d9ef;
+  transition: color 0.2s ease;
 }
 a:hover {
   color: #8be9fd;
 }
 
-/* Cards */
+/* Headings and tagline */
+h1, h2, h3, h4, h5, h6,
+.mainheading h1.sitetitle,
+.mainheading h1.posttitle,
+.mainheading p {
+  color: #fff;
+}
 
+.mainheading h1.sitetitle a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Cards */
 .card,
 .listfeaturedtag .card,
 .listrelated .card {
@@ -23,7 +39,7 @@ a:hover {
   color: #f0f0f0;
 }
 
-/* Card text */
+/* Card Text */
 .card-title,
 .listfeaturedtag h2.card-title,
 .listrecent h2.card-title,
@@ -37,14 +53,14 @@ a:hover {
 }
 
 .card-title a,
-  .card-title-link {
-    color: rgba(255, 255, 255, 0.8);
-  }
+.card-title-link {
+  color: rgba(255, 255, 255, 0.8);
+}
 
 .card-title a:hover,
-  .card-title-link {
-    color: #fff;
-  }
+.card-title-link:hover {
+  color: #fff;
+}
 
 .author-name {
   color: rgba(255, 255, 255, 0.85);
@@ -55,8 +71,15 @@ a:hover {
   color: #fff;
 }
 
-/* Card footer (author and date) */
+/* Card Footer */
+.card-footer {
+  background-color: #1a1a1a;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
 
+.card-footer .wrapfooter,
+.card-footer span,
+.card-footer a,
 .wrapfooter,
 span.post-date,
 span.author-meta,
@@ -68,45 +91,18 @@ span.post-read-more a {
   background-color: #1a1a1a;
 }
 
-  .card-footer {
-    background-color: #1a1a1a;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-  }
-
-  .card-footer .wrapfooter,
-  .card-footer span,
-  .card-footer a {
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  .card-footer a:hover {
-    color: #fff;
-  }
-
-span.post-name a,
-  span.post-read-more a {
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  span.post-name a:hover,
-  span.post-read-more a:hover {
-    color: #fff;
-  }
-
-/* Headings and tagline */
-h1, h2, h3, h4, h5, h6,
-.mainheading h1.sitetitle,
-.mainheading h1.posttitle,
-.mainheading p {
+.card-footer a:hover,
+span.post-name a:hover,
+span.post-read-more a:hover {
   color: #fff;
 }
 
-.mainheading h1.sitetitle a {
-    color: #fff;
-    text-decoration: none;
-  }
+span.post-name a,
+span.post-read-more a {
+  color: rgba(255, 255, 255, 0.8);
+}
 
-/* Section headings */
+/* Section titles */
 .section-title h2,
 .section-title span {
   color: #fff;
@@ -118,6 +114,7 @@ h1, h2, h3, h4, h5, h6,
   background: rgba(0, 0, 0, 0.85) !important;
   box-shadow: 0 2px 2px -2px rgba(255, 255, 255, 0.1) !important;
 }
+
 .mediumnavigation a,
 .mediumnavigation .navbar-brand,
 .mediumnavigation .nav-item {
@@ -133,31 +130,31 @@ h1, h2, h3, h4, h5, h6,
   color: #fff;
   border-color: rgba(255, 255, 255, 0.1);
 }
+
 .mediumnavigation .form-control::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
 /* Jumbotron */
-
 .jumbotron.fortags {
-    background-image: url('../images/jumbotron_dark.webp') !important;
-    background-size: cover;
-    background-position: center;
-  }
+  background-image: url('../images/jumbotron_dark.webp') !important;
+  background-size: cover;
+  background-position: center;
+}
 
-  .jumbotron.fortags .col-md-4 {
-    background: rgba(0, 0, 0, 0.75); /* optional: improve text legibility */
-  }
+.jumbotron.fortags .col-md-4 {
+  background: rgba(0, 0, 0, 0.75);
+}
 
-  .jumbotron.fortags a {
-    background: #222;
-    color: #8be9fd;
-  }
+.jumbotron.fortags a {
+  background: #222;
+  color: #8be9fd;
+}
 
-  .jumbotron.fortags a:hover {
-    background: #444;
-    color: #fff;
-  }
+.jumbotron.fortags a:hover {
+  background: #444;
+  color: #fff;
+}
 
 /* Footer */
 .footer {
@@ -166,7 +163,7 @@ h1, h2, h3, h4, h5, h6,
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Image brightness */
+/* Images */
 .card img,
 .article-post img,
 .thumbnail img,
@@ -174,8 +171,7 @@ h1, h2, h3, h4, h5, h6,
   filter: brightness(0.9);
 }
 
-/* Fix input text color if you use forms */
-
+/* Forms */
 input,
 textarea {
   background-color: #1a1a1a;
@@ -183,18 +179,18 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Buttons */
 .btn.follow {
-    border-color: #8be9fd;
-    color: #66d9ef;
-    padding: 3px 10px;
-    text-align: center;
-    border-radius: 999em;
-    font-size: 0.85rem;
-    display: inline-block;
+  border-color: #8be9fd;
+  color: #66d9ef;
+  padding: 3px 10px;
+  text-align: center;
+  border-radius: 999em;
+  font-size: 0.85rem;
+  display: inline-block;
 }
 
-/* Share icons in posts */
-
+/* Share block */
 .share,
 .share a {
   color: #66d9ef;
@@ -217,4 +213,3 @@ textarea {
 .sep {
   background: rgba(255, 255, 255, 0.2);
 }
-
