@@ -36,6 +36,11 @@ a:hover {
 
 .card-title a,
   .card-title-link {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+.card-title a:hover,
+  .card-title-link {
     color: #fff;
   }
 
