@@ -30,6 +30,25 @@ h1, h2, h3, h4, h5, h6,
   text-decoration: none;
 }
 
+/* Image Caption */
+.image-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.5rem;
+}
+
+.image-caption a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.image-caption a:hover {
+  color: #8be9fd;
+  text-decoration: underline;
+}
+
 /* Cards */
 .card,
 .listfeaturedtag .card,
