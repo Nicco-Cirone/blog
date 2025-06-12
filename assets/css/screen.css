@@ -373,6 +373,24 @@ blockquote {
     margin: 0 0 1.5rem 0;
 }
 
+.image-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 0.5rem;
+}
+
+.image-caption a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.image-caption a:hover {
+  color: #038252;
+  text-decoration: underline;
+}
+
 .featured-image {
     display: block;
     margin-bottom: 1.5rem;
