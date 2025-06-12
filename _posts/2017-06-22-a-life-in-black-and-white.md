@@ -49,11 +49,13 @@ What we really want, is to find a projection that keeps the relative position of
 
 To do this, we need a Pseudo-Mercator projection. So we lie to alteryx, and we tell it our data is in Pseudo-Mercator (while it's not! It's actually in polar stereographic but ssst!)
 
-({{ site.baseurl }}/assets/uploads/capture3.webp) We create new points in a Pseudo Mercator projection
+![Capture3.PNG]({{ site.baseurl }}/assets/uploads/capture3.webp) 
+<p class="image-caption"> We create new points in a Pseudo Mercator projection </p>
 
 And this is the result:
 
-({{ site.baseurl }}/assets/uploads/capture4.webp) 
+
+![Capture4.PNG]({{ site.baseurl }}/assets/uploads/capture4.webp) 
 <p class="image-caption"> Antarctica is now in Africa. Sweet. </p>
 
 Doing this, we move Antarctica in Africa.
