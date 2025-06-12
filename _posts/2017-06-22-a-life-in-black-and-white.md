@@ -14,7 +14,7 @@ Here below is my final submission, built around a map of the Antarctic Penguins�
 
 [![A life in black and white]({{ site.baseurl }}/assets/uploads/a-life-in-black-and-white.webp)](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)
 <p class="image-caption">
-  <a href="[https://example.com](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)" target="_blank" rel="noopener noreferrer">Click to go to the interactive dashboarddashboard</a>
+  <a href="[https://example.com](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)" target="_blank" rel="noopener noreferrer">Click to go to the interactive dashboard</a>
 </p>
 
 First of all, I have to thank Dr Grant Humphries and Dr. Heather J. Lynch to gave me green light to the use of their brilliant data. Their project, MAPPPD, is a relentless effort in collecting data on penguins to constantly monitor the health of the Antarctic and - ultimately- of our planet; find more info [here.](http://www.penguinmap.com/mapppd)
@@ -31,7 +31,8 @@ The point here is (as you already know because you read Sarah's blog), Tableau c
 
 Sarah's method works using polar projected coordinates, which basically measure the distance from (0,0), on the South Pole. I had latitude and longitude in the data though, so the first thing to do is reprojecting the data into polar coordinates.
 
-![The sites are nicely unwrapped in a Lat/Lon projection]({{ site.baseurl }}/assets/uploads/capture1.webp) The sites are nicely unwrapped on a Lat/Lon projection
+![The sites are nicely unwrapped in a Lat/Lon projection]({{ site.baseurl }}/assets/uploads/capture1.webp) 
+<p class="image-caption"> The sites are nicely unwrapped on a Lat/Lon projection </p>
 
 So first I create centroids out of the Lat/Lon fields, and then I can go ahead and use the "Spatial Info" tool to transpose the centroids on polar coordinates.
 
@@ -48,13 +49,12 @@ What we really want, is to find a projection that keeps the relative position of
 
 To do this, we need a Pseudo-Mercator projection. So we lie to alteryx, and we tell it our data is in Pseudo-Mercator (while it's not! It's actually in polar stereographic but ssst!)
 
- 
-
 ({{ site.baseurl }}/assets/uploads/capture3.webp) We create new points in a Pseudo Mercator projection
 
 And this is the result:
 
-({{ site.baseurl }}/assets/uploads/capture4.webp) Antarctica is now in Africa. Sweet.
+({{ site.baseurl }}/assets/uploads/capture4.webp) 
+<p class="image-caption"> Antarctica is now in Africa. Sweet. </p>
 
 Doing this, we move Antarctica in Africa.
 
@@ -68,6 +68,7 @@ So the next task will be to replace the classic tableau map, with a custom built
 
 We can just repeat the same process above with a shapefile of continents,,, and then upload it on a custom map on mapbox. Here below the final result:
 
-![Capture5.PNG]({{ site.baseurl }}/assets/uploads/capture5.webp) Funky!
+![Capture5.PNG]({{ site.baseurl }}/assets/uploads/capture5.webp) 
+<p class="image-caption"> Funky! </p>
 
 Have fun with your polar data!
