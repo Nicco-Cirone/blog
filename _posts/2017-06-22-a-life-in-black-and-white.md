@@ -13,7 +13,9 @@ It's that time of the year again, when Tableau hosts another round of the #IronV
 Here below is my final submission, built around a map of the Antarctic Penguins colonies which uses a polar projection in Tableau. If you want to know I achieved it, with a mix of alteryx and mapbox magic, this post is for you.
 
 [![A life in black and white]({{ site.baseurl }}/assets/uploads/a-life-in-black-and-white.webp)](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)
-[Click to go to the interactive dashboard](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)
+<p class="image-caption">
+  <a href="[https://example.com](https://public.tableau.com/profile/nicco.cirone#!/vizhome/Alifeinblackandwhite/Alifeinblackandwhite)" target="_blank" rel="noopener noreferrer">Click to go to the interactive dashboarddashboard</a>
+</p>
 
 First of all, I have to thank Dr Grant Humphries and Dr. Heather J. Lynch to gave me green light to the use of their brilliant data. Their project, MAPPPD, is a relentless effort in collecting data on penguins to constantly monitor the health of the Antarctic and - ultimately- of our planet; find more info [here.](http://www.penguinmap.com/mapppd)
 
@@ -33,7 +35,8 @@ Sarah's method works using polar projected coordinates, which basically measure 
 
 So first I create centroids out of the Lat/Lon fields, and then I can go ahead and use the "Spatial Info" tool to transpose the centroids on polar coordinates.
 
-![Capture2.PNG]({{ site.baseurl }}/assets/uploads/capture2.webp) Using "centroid" spatial objects we transform Lat/Lon in polar coords.
+![Capture2.PNG]({{ site.baseurl }}/assets/uploads/capture2.webp) 
+<p class="image-caption"> Using "centroid" spatial objects we transform Lat/Lon in polar coords </p>
 
 Nice.
 
