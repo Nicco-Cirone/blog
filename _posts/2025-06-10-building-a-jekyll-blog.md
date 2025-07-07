@@ -1,5 +1,5 @@
 ---
-title: "Building a Blog from Zero with Jekyll, Github, and a little help from ChatGPT"
+title: "Building a Blog from Zero with Jekyll and Github Pages"
 date: 2025-06-10
 layout: post
 author: Nicco
